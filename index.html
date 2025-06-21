@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Test d’éligibilité Wallonie – Ren0vate</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/full.css">
+  <script type="module" src="js/test-wallonie.js" defer></script>
+</head>
+<body>
+
+  <!-- 🟢 Bannière Ren0vate -->
+  <header class="ren0vate-banner text-center py-4 mb-4">
+    <h1 class="text-success">Test d’éligibilité aux primes – Wallonie</h1>
+    <p>Découvrez si vous avez droit aux aides à la rénovation wallonnes</p>
+  </header>
+
+  <!-- 🔵 Barre de progression -->
+  <div class="progress-container container-dashboard mb-4">
+    <div class="progress-bar" id="progressBar" style="width: 10%;"></div>
+  </div>
+
+  <main class="container-dashboard">
+    <form id="form-eligibilite-wallonie">
+
+      <!-- Étape 1 : Demandeur -->
+      <section class="step" data-step="1">
+        <h3>1. Concernant le demandeur</h3>
+
+        <div class="question">
+          <label>Vous êtes âgé de 18 ans au moins ou mineur émancipé ?</label><br>
+          <input type="radio" name="age" value="oui"> Oui
+          <input type="radio" name="age" value="non"> Non
+        </div>
+
+        <div class="question">
+          <label>Vous êtes propriétaire/nu-propriétaire/usufruitier en tant que personne physique ?</label><br>
+          <input type="radio" name="statut" value="oui"> Oui
+          <input type="radio" name="statut" value="non"> Non
+        </div>
+
+        <div class="question">
+          <label>Vous êtes inscrit au registre de la population ou au registre des étrangers ?</label><br>
+          <input type="radio" name="registre" value="oui"> Oui
+          <input type="radio" name="registre" value="non"> Non
+        </div>
+
+        <div class="question">
+          <label>Vous êtes une association de copropriétaires ou un représentant d’une copropriété indivise ?</label><br>
+          <input type="radio" name="copro" value="oui"> Oui
+          <input type="radio" name="copro" value="non"> Non
+        </div>
+
+        <button type="button" class="btn btn-success mt-3" id="nextStep1">Suivant</button>
+      </section>
+
+      <!-- Étape 2 : Bâtiment -->
+      <section class="step" data-step="2" style="display: none;">
+        <h3>2. Concernant le bâtiment</h3>
+
+        <div class="question">
+          <label>Le bâtiment est situé en Wallonie (hors Communauté germanophone) ?</label><br>
+          <input type="radio" name="localisation" value="oui"> Oui
+          <input type="radio" name="localisation" value="non"> Non
+        </div>
+
+        <div class="question">
+          <label>Il a été construit il y a plus de 15 ans ?</label><br>
+          <input type="radio" name="anciennete" value="oui"> Oui
+          <input type="radio" name="anciennete" value="non"> Non
+        </div>
+
+        <div class="question">
+          <label>Il est destiné à plus de 50 % à du logement ?</label><br>
+          <input type="radio" name="usage_logement" value="oui"> Oui
+          <input type="radio" name="usage_logement" value="non"> Non
+        </div>
+
+        <div class="question">
+          <label>Finalité du logement :</label><br>
+          <select name="finalite_logement">
+            <option value="">-- Choisissez une option --</option>
+            <option value="proprio">Habitation personnelle (≥ 5 ans)</option>
+            <option value="location_loyer">Location avec loyer contrôlé (≥ 5 ans)</option>
+            <option value="ais">AIS, SLS, APL (≥ 9 ans)</option>
+            <option value="famille">Mise à disposition à un proche (≥ 1 an)</option>
+          </select>
+        </div>
+
+        <button type="button" class="btn btn-secondary mt-3" id="prevStep2">Retour</button>
+        <button type="button" class="btn btn-success mt-3" id="nextStep2">Suivant</button>
+      </section>
+
+      <!-- Étape 3 : Revenus -->
+      <section class="step" data-step="3" style="display: none;">
+        <h3>3. Concernant les revenus</h3>
+
+        <div class="question">
+          <label>Votre revenu imposable globalement est :</label><br>
+          <select name="revenu">
+            <option value="">-- Sélectionnez une tranche --</option>
+            <option value="1">≤ 26 900 €</option>
+            <option value="2">26 900 – 38 300 €</option>
+            <option value="3">38 300 – 50 600 €</option>
+            <option value="4">50 600 – 114 400 €</option>
+            <option value="aucune">> 114 400 € (non éligible)</option>
+          </select>
+        </div>
+
+        <button type="button" class="btn btn-secondary mt-3" id="prevStep3">Retour</button>
+        <button type="submit" class="btn btn-primary mt-3">Calculer mon éligibilité</button>
+      </section>
+
+    </form>
+  </main>
+  <script type="module" src="js/test-wallonie.js"></script>
+</body>
+</html>
