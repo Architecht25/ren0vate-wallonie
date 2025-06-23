@@ -1,3 +1,5 @@
+console.log("📥 Module entrepreneurs.js chargé");
+
 export function initialiserAjoutEntrepreneurs() {
   const btn = document.getElementById('add-entrepreneur-btn');
   const container = document.getElementById('entrepreneurs-container');
