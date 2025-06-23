@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ren0vate/Primes RF</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Feuille de style CSS -->
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="CSS/components/card.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+  <script type="importmap">
+  {
+    "imports": {
+      "sweetalert2": "https://cdn.jsdelivr.net/npm/sweetalert2@11.7.1/+esm",
+      "bootstrap": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    }
+  }
+</script>
+</head>
+<body class="p-4 text-center">
+
+  <div id="zone-cartes-documents" class="cartes-section">
+
+     <div class="doc-card card-devis">
+      <img src="images/devis.webp" alt="facture">
+      <h5 class="mb-3">📄 Devis/métré </h5>
+      <ul class="list-unstyled small mb-3">
+        <li><strong>Conditions pour le métré:</strong> Etre signé par l'architecte, budgété et quantifié obligatoirement.</li>
+        <li><strong>Devis :</strong> 3 </li>
+        <li><strong>Montant total des travaux:</strong> 18.500 €</li>
+      </ul>
+      <div class="d-flex flex-column flex-sm-row gap-2 mt-auto">
+        <button class="btn btn-outline-secondary btn-sm">📂 Vers les devis</button>
+        <button class="btn btn-primary btn-sm">📤 Joindre un nouveau devis</button>
+      </div>
+    </div>
+
+    <div class="doc-card card-factures">
+      <img src="images/facture.webp" alt="facture">
+      <h5 class="mb-3">🧾 Factures</h5>
+      <ul class="list-unstyled small mb-3">
+        <li><strong>Conditions:</strong> Les factures doivent être établies au nom du demandeur de la prime.</li>
+        <li><strong>Conditions:</strong> L'adresse du chantier doit figurer sur la facture + description travaux + budgété + le montant total des factures doit être égal au montant du devis.</li>
+        <li><strong>Conditions:</strong> les factures doivent dater de maximum 2 ans à date d'introduction de la demande.</strong></li>
+        <li><strong>Devis initial :</strong> 18.500 €</li>
+        <li><strong>Factures jointes :</strong> 3</li>
+        <li><strong>Total factures :</strong> 14.650 €</li>
+        <li><strong>% réalisé :</strong> 79%</li>
+      </ul>
+      <div class="d-flex flex-column flex-sm-row gap-2 mt-auto">
+        <button class="btn btn-outline-secondary btn-sm">📂 Vers les factures</button>
+        <button class="btn btn-primary btn-sm">📤 Joindre une facture</button>
+      </div>
+    </div>
+
+     <div class="doc-card card-etat-avancement">
+      <img src="images/avancement.webp" alt="avancement">
+      <h5 class="mb-3">📸 Etats d'avancement de chantier</h5>
+      <ul class="list-unstyled small mb-3">
+        <li><strong>Etats d'avancement joints :</strong> 6 </li>
+        <li><strong>Type :</strong> pendant</li>
+      </ul>
+      <div class="d-flex flex-column flex-sm-row gap-2 mt-auto">
+        <button class="btn btn-outline-secondary btn-sm">📂 Voir les Etats d'avancement</button>
+        <button class="btn btn-primary btn-sm">📤 Ajouter un état d'avancement</button>
+      </div>
+    </div>
+
+    <div class="doc-card card-attestation-entrepreneur">
+      <img src="images/entrepreneur.webp" alt="entrepreneur">
+      <h5 class="mb-3">📸 Attestations de l'entrepreneur</h5>
+      <ul class="list-unstyled small mb-3">
+        <li><strong>Conditions :</strong> Les attestations doivent être signées et cacheté par l'entrepreneur</li>
+        <li><strong>Liste des attestations à télécharger: </strong>(liste déroulante)</li>
+        <li><strong>Total :</strong> 7 </li>
+        <li><strong>Attestation jointes :</strong> 4 </li>
+        <li><strong>Type:</strong> Avant / Pendant / Après</li>
+      </ul>
+      <div class="d-flex flex-column flex-sm-row gap-2 mt-auto">
+        <button class="btn btn-outline-secondary btn-sm">📂 Attestations à télécharger</button>
+        <button class="btn btn-primary btn-sm">📤 Ajouter une attestation</button>
+        <button class="btn btn-outline-secondary btn-sm">📂 Voir les attestations téléchargées</button>
+      </div>
+    </div>
+
+    <div class="doc-card card-certificat">
+      <img src="images/certificat.webp" alt="Certificat PEB">
+      <h5 class="mb-3">📋 Certificat PEB</h5>
+      <ul class="list-unstyled small mb-3">
+        <li><strong>Condition:</strong> PEB avant travaux & PEB Après travaux</li>
+        <li><strong>Label visé :</strong> C </li>
+        <li><strong>Ventilation conforme :</strong> Oui</li>
+        <li><strong>Document joint :</strong> 1</li>
+      </ul>
+      <div class="d-flex flex-column flex-sm-row gap-2 mt-auto">
+        <button class="btn btn-outline-secondary btn-sm">📂 Voir le certificat</button>
+        <button class="btn btn-primary btn-sm">📤 Joindre un document</button>
+      </div>
+    </div>
+
+    <div class="doc-card card-photos">
+      <img src="images/photo.webp" alt="Photos">
+      <h5 class="mb-3">📸 Preuves photo</h5>
+      <ul class="list-unstyled small mb-3">
+        <li><strong>Infos:</strong> Obligatoire châssis / fortement recommandés pour le reste des travaux</li>
+        <li><strong>Conditions :</strong> Prendre des photos des châssis mais aussi des invisivents ou du système de ventilation</li>
+        <li><strong>Photos jointes :</strong> 6</li>
+        <li><strong>Étapes :</strong> Avant / Pendant / Après</li>
+      </ul>
+      <div class="d-flex flex-column flex-sm-row gap-2 mt-auto">
+        <button class="btn btn-outline-secondary btn-sm">📂 Voir les photos</button>
+        <button class="btn btn-primary btn-sm">📤 Ajouter une photo</button>
+      </div>
+    </div>
+
+    <div class="doc-card card-attestation-label">
+      <img src="images/label.avif" alt="label">
+      <h5 class="mb-3">📸 Certificats de label européen</h5>
+      <ul class="list-unstyled small mb-3">
+        <li><strong>Appareils :</strong> Pompe à chaleur ou chauffe eau thermodynamique </li>
+        <li><strong>Certificat de label joints :</strong> 0 </li>
+        <li><strong>Type:</strong> Pendant</li>
+      </ul>
+      <div class="d-flex flex-column flex-sm-row gap-2 mt-auto">
+        <button class="btn btn-outline-secondary btn-sm">📂 Voir les certificats</button>
+        <button class="btn btn-primary btn-sm">📤 Ajouter un certificat</button>
+      </div>
+    </div>
+
+    <div class="doc-card card-attestation-conformité">
+      <img src="images/conformité.webp" alt="conformité">
+      <h5 class="mb-3">📸 Attestations de conformité électrique</h5>
+      <ul class="list-unstyled small mb-3">
+        <li><strong>Attestation jointes :</strong> 1 </li>
+        <li><strong>Étapes :</strong> Après</li>
+      </ul>
+      <div class="d-flex flex-column flex-sm-row gap-2 mt-auto">
+        <button class="btn btn-outline-secondary btn-sm">📂 Voir l'attestation</button>
+        <button class="btn btn-primary btn-sm">📤 Ajouter l'attestation</button>
+      </div>
+    </div>
+
+     <div class="doc-card card-plan">
+      <img src="images/plan.webp" alt="plan">
+      <h5 class="mb-3">🏠Plans</h5>
+      <ul class="list-unstyled small mb-3">
+        <li><strong>Plans joints :</strong> 0 </li>
+        <li><strong>Étapes :</strong> Avant</li>
+      </ul>
+      <div class="d-flex flex-column flex-sm-row gap-2 mt-auto">
+        <button class="btn btn-outline-secondary btn-sm">📂 Voir les plans</button>
+        <button class="btn btn-primary btn-sm">📤 Ajouter des plans</button>
+      </div>
+    </div>
+
+    <div class="doc-card card-plan">
+      <img src="images/Permis.jpeg" alt="permis">
+      <h5 class="mb-3">🏠Permis d'Urbanisme</h5>
+      <ul class="list-unstyled small mb-3">
+        <li><strong>Permis joint :</strong> 0 </li>
+        <li><strong>Étapes :</strong> Avant</li>
+      </ul>
+      <div class="d-flex flex-column flex-sm-row gap-2 mt-auto">
+        <button class="btn btn-outline-secondary btn-sm">📂 Voir le permis</button>
+        <button class="btn btn-primary btn-sm">📤 Ajouter le permis</button>
+      </div>
+    </div>
+
+    <div class="doc-card card-primes">
+      <img src="images/prime.jpg" alt="primes">
+      <h5 class="mb-3">🏠Dossier de primes</h5>
+      <ul class="list-unstyled small mb-3">
+        <li><strong>Primes acceptées:</strong> 0 </li>
+        <li><strong>Étapes :</strong> Après</li>
+      </ul>
+      <div class="d-flex flex-column flex-sm-row gap-2 mt-auto">
+        <button class="btn btn-outline-secondary btn-sm">📂 Voir les primes acceptées/refusées</button>
+      </div>
+    </div>
+
+  </div>
+  <a href="introduction.html" class="btn btn-primary text-center mt-3 ms-3" id="btn-next-admin">
+    Prévisualisez et adaptez vos données et enfin introduisez vos demandes de primes >>
+  </a>
+  <a href="index.html" class="btn btn-success text-center mt-3 ms-3" id="btn-next-admin">
+    Retour au menu principal
+  </a>
+  <script type="module" src="js/main-cartes-documents.js"></script>
+</body>
+</html>

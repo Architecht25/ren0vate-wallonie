@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Test d’éligibilité Wallonie – Ren0vate</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <script type="module" src="js/test-wallonie.js" defer></script>
+</head>
+<body class="bg-light">
+
+  <!-- Bannière -->
+  <header class="bg-success text-white py-4 mb-4 text-center shadow-sm">
+    <h1 class="mb-1">Ren0vate – Wallonie</h1>
+    <p class="mb-0">Test d’éligibilité aux primes à la rénovation</p>
+  </header>
+
+  <!-- Barre de progression -->
+  <div class="container mb-4">
+    <div class="progress" style="height: 10px;">
+      <div class="progress-bar bg-success" id="progressBar" role="progressbar" style="width: 10%;"></div>
+    </div>
+  </div>
+
+  <!-- Formulaire -->
+  <div class="container mb-5">
+    <form id="form-eligibilite-wallonie" class="card shadow-sm p-4 bg-white border-0">
+
+      <!-- Etape 1 : Demandeur -->
+      <section class="step" data-step="1">
+        <h4 class="mb-4 text-success">1. Concernant le demandeur</h4>
+
+        <div class="mb-3">
+          <label class="form-label">Vous êtes âgé de 18 ans au moins ou mineur émancipé ?</label>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="age" value="oui" id="ageOui">
+            <label class="form-check-label" for="ageOui">Oui</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="age" value="non" id="ageNon">
+            <label class="form-check-label" for="ageNon">Non</label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Vous êtes propriétaire/nu-propriétaire/usufruitier en tant que personne physique ?</label>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="statut" value="oui" id="statutOui">
+            <label class="form-check-label" for="statutOui">Oui</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="statut" value="non" id="statutNon">
+            <label class="form-check-label" for="statutNon">Non</label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Vous êtes inscrit au registre de la population ou au registre des étrangers ?</label>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="registre" value="oui" id="registreOui">
+            <label class="form-check-label" for="registreOui">Oui</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="registre" value="non" id="registreNon">
+            <label class="form-check-label" for="registreNon">Non</label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Vous êtes une association de copropriétaires ou un représentant d’une copropriété indivise ?</label>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="copro" value="oui" id="coproOui">
+            <label class="form-check-label" for="coproOui">Oui</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="copro" value="non" id="coproNon">
+            <label class="form-check-label" for="coproNon">Non</label>
+          </div>
+        </div>
+
+        <div class="text-end">
+          <button type="button" class="btn btn-success rounded-pill px-4" id="nextStep1">
+            Suivant <i class="bi bi-arrow-right-circle ms-2"></i>
+          </button>
+        </div>
+      </section>
+
+      <!-- Etape 2 : Bâtiment -->
+      <section class="step" data-step="2" style="display: none;">
+        <h4 class="mb-4 text-success">2. Concernant le bâtiment</h4>
+
+        <div class="mb-3">
+          <label class="form-label">Le bâtiment est situé en Wallonie (hors Communauté germanophone) ?</label>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="localisation" value="oui" id="localisationOui">
+            <label class="form-check-label" for="localisationOui">Oui</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="localisation" value="non" id="localisationNon">
+            <label class="form-check-label" for="localisationNon">Non</label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Il a été construit il y a plus de 15 ans ?</label>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="anciennete" value="oui" id="ancienneteOui">
+            <label class="form-check-label" for="ancienneteOui">Oui</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="anciennete" value="non" id="ancienneteNon">
+            <label class="form-check-label" for="ancienneteNon">Non</label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Il est destiné à plus de 50 % à du logement ?</label>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="usage_logement" value="oui" id="usageOui">
+            <label class="form-check-label" for="usageOui">Oui</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="usage_logement" value="non" id="usageNon">
+            <label class="form-check-label" for="usageNon">Non</label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Finalité du logement :</label>
+          <select class="form-select" name="finalite_logement">
+            <option value="">-- Choisissez une option --</option>
+            <option value="proprio">Habitation personnelle (min. 5 ans)</option>
+            <option value="location_loyer">Location avec loyer modéré (min. 5 ans)</option>
+            <option value="ais">AIS, SLS, APL (min. 9 ans)</option>
+            <option value="famille">Mise à disposition à un proche (min. 1 an)</option>
+          </select>
+        </div>
+
+        <div class="d-flex justify-content-between">
+          <button type="button" class="btn btn-outline-secondary rounded-pill px-4" id="prevStep2">
+            <i class="bi bi-arrow-left-circle me-2"></i> Retour
+          </button>
+          <button type="button" class="btn btn-success rounded-pill px-4" id="nextStep2">
+            Suivant <i class="bi bi-arrow-right-circle ms-2"></i>
+          </button>
+        </div>
+      </section>
+
+      <!-- Etape 3 : Revenus -->
+      <section class="step" data-step="3" style="display: none;">
+        <h4 class="mb-4 text-success">3. Concernant les revenus</h4>
+
+        <div class="mb-3">
+          <label class="form-label">Votre revenu imposable globalement est :</label>
+          <select class="form-select" name="revenu">
+            <option value="">-- Sélectionnez votre tranche --</option>
+            <option value="1">≤ 26 900 €</option>
+            <option value="2">26 900,01 € – 38 300 €</option>
+            <option value="3">38 300,01 € – 50 600 €</option>
+            <option value="4">50 600,01 € – 114 400 €</option>
+            <option value="aucune">> 114 400 € (non éligible)</option>
+          </select>
+        </div>
+
+        <div class="d-flex justify-content-between">
+          <button type="button" class="btn btn-outline-secondary rounded-pill px-4" id="prevStep3">
+            <i class="bi bi-arrow-left-circle me-2"></i> Retour
+          </button>
+          <button type="submit" class="btn btn-primary rounded-pill px-4">
+            Calculer mon éligibilité <i class="bi bi-check-circle ms-2"></i>
+          </button>
+        </div>
+      </section>
+
+    </form>
+  </div>
+
+  <div class="text-center my-4">
+    <a href="test-audit.html" target="_blank" class="btn btn-outline-primary">
+      Vers le test audit énergétique
+    </a>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="module" src="js/test-wallonie.js"></script>
+
+</body>
+</html>

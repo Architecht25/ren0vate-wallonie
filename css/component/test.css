@@ -1,0 +1,125 @@
+/* === Formulaire === */
+.form-card {
+  background-color: #f2fdeb;
+  border-radius: 16px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  transition: all 0.3s ease-in-out;
+  max-width: 680px;
+  margin-left: auto;
+  margin-right: auto;
+  display: none;
+}
+
+.form-card.active {
+  display: block;
+}
+
+.form-card h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #2d2d2d;
+  margin-bottom: 1rem;
+}
+
+.form-card label {
+  display: block;
+  padding: 0.5rem 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+.form-card input[type="radio"] {
+  margin-right: 0.6rem;
+  accent-color: #0077cc;
+}
+
+/* === Bouton formulaire "Suivant" === */
+.btn-primary {
+  background-color: #0077cc;
+  color: white;
+  font-weight: 600;
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  border: none;
+  margin-top: 1.5rem;
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #005fa3;
+}
+
+/* === Résultat final === */
+.result {
+  background: #e9fcee;
+  padding: 2rem;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  max-width: 680px;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+/* === Groupe de boutons === */
+.btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+/* === Boutons custom === */
+.btn-custom {
+  min-width: 200px;
+  height: 48px;
+  padding: 0 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: background-color 0.2s ease, opacity 0.2s ease;
+}
+
+/* === Couleurs personnalisées === */
+.custom-primary {
+  background-color: #0077cc;
+  color: white;
+}
+
+.custom-primary:hover {
+  background-color: #005fa3;
+}
+
+.custom-secondary {
+  background-color: #6c757d;
+  color: white;
+}
+
+.custom-secondary:hover {
+  background-color: #5a6268;
+}
+
+/* === Responsive === */
+@media (max-width: 480px) {
+  .btn-group {
+    flex-direction: column;
+  }
+
+  .btn-custom {
+    width: 100%;
+    min-width: auto;
+  }
+}
