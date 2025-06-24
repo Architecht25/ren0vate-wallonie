@@ -162,22 +162,22 @@
     "unite": "€/m²",
     "typeDeValeur": "fixe_par_categorie",
     "valeursParCategorie": {
-      "R1": 840,
-      "R2": 0,
-      "R3": 0,
-      "R4": 0,
-      "R5": 140
+      "R1": 2.4,
+      "R2": 4.8,
+      "R3": 7.2,
+      "R4": 9.6,
+      "R5": 14.4
     },
     "condition": "",
     "conseil": "",
     "document": "",
     "specifique": "standard",
     "placeholder": {
-      "R1": "Montant ou surface",
-      "R2": "Montant ou surface",
-      "R3": "Montant ou surface",
-      "R4": "Montant ou surface",
-      "R5": "Montant ou surface"
+      "R1": "Surface en m²",
+      "R2": "Surface en m²",
+      "R3": "Surface en m²",
+      "R4": "Surface en m²",
+      "R5": "Surface en m²"
     },
     "image": "images/renovation_murs.webp"
   },
@@ -188,22 +188,22 @@
     "unite": "€/m²",
     "typeDeValeur": "fixe_par_categorie",
     "valeursParCategorie": {
-      "R1": 840,
-      "R2": 0,
-      "R3": 0,
-      "R4": 0,
-      "R5": 140
+      "R1": 3.2,
+      "R2": 6.4,
+      "R3": 9.6,
+      "R4": 12.8,
+      "R5": 19.2
     },
     "condition": "",
     "conseil": "",
     "document": "",
     "specifique": "standard",
     "placeholder": {
-      "R1": "Montant ou surface",
-      "R2": "Montant ou surface",
-      "R3": "Montant ou surface",
-      "R4": "Montant ou surface",
-      "R5": "Montant ou surface"
+      "R1": "Surface en m²",
+      "R2": "Surface en m²",
+      "R3": "Surface en m²",
+      "R4": "Surface en m²",
+      "R5": "Surface en m²"
     },
     "image": "images/renovation_murs.webp"
   },
@@ -214,22 +214,22 @@
     "unite": "€/m²",
     "typeDeValeur": "fixe_par_categorie",
     "valeursParCategorie": {
-      "R1": 840,
-      "R2": 0,
-      "R3": 0,
-      "R4": 0,
-      "R5": 140
+      "R1": 3.2,
+      "R2": 6.4,
+      "R3": 9.6,
+      "R4": 12.8,
+      "R5": 19.2
     },
     "condition": "",
     "conseil": "",
     "document": "",
     "specifique": "standard",
     "placeholder": {
-      "R1": "Montant ou surface",
-      "R2": "Montant ou surface",
-      "R3": "Montant ou surface",
-      "R4": "Montant ou surface",
-      "R5": "Montant ou surface"
+      "R1": "Surface en m²",
+      "R2": "Surface en m²",
+      "R3": "Surface en m²",
+      "R4": "Surface en m²",
+      "R5": "Surface en m²"
     },
     "image": "images/renovation_murs.webp"
   },
@@ -240,22 +240,22 @@
     "unite": "€/m²",
     "typeDeValeur": "fixe_par_categorie",
     "valeursParCategorie": {
-      "R1": 840,
-      "R2": 0,
-      "R3": 0,
-      "R4": 0,
-      "R5": 140
+      "R1": 2,
+      "R2": 4,
+      "R3": 6,
+      "R4": 8,
+      "R5": 12
     },
     "condition": "",
     "conseil": "",
     "document": "",
     "specifique": "standard",
     "placeholder": {
-      "R1": "Montant ou surface",
-      "R2": "Montant ou surface",
-      "R3": "Montant ou surface",
-      "R4": "Montant ou surface",
-      "R5": "Montant ou surface"
+      "R1": "Surface en m²",
+      "R2": "Surface en m²",
+      "R3": "Surface en m²",
+      "R4": "Surface en m²",
+      "R5": "Surface en m²"
     },
     "image": "images/renovation_murs.webp"
   },
@@ -266,22 +266,22 @@
     "unite": "€",
     "typeDeValeur": "fixe_par_categorie",
     "valeursParCategorie": {
-      "R1": 840,
-      "R2": 0,
-      "R3": 0,
-      "R4": 0,
-      "R5": 140
+      "R1": 140,
+      "R2": 280,
+      "R3": 420,
+      "R4": 560,
+      "R5": 840
     },
     "condition": "",
     "conseil": "",
     "document": "",
     "specifique": "standard",
     "placeholder": {
-      "R1": "Montant ou surface",
-      "R2": "Montant ou surface",
-      "R3": "Montant ou surface",
-      "R4": "Montant ou surface",
-      "R5": "Montant ou surface"
+      "R1": "Forfaitaire - 1 ou 0",
+      "R2": "Forfaitaire - 1 ou 0",
+      "R3": "Forfaitaire - 1 ou 0",
+      "R4": "Forfaitaire - 1 ou 0",
+      "R5": "Forfaitaire - 1 ou 0"
     },
     "image": "images/renovation_murs.webp"
   },
@@ -292,22 +292,22 @@
     "unite": "€",
     "typeDeValeur": "fixe_par_categorie",
     "valeursParCategorie": {
-      "R1": 840,
-      "R2": 0,
-      "R3": 0,
-      "R4": 0,
-      "R5": 140
+      "R1": 140,
+      "R2": 280,
+      "R3": 420,
+      "R4": 560,
+      "R5": 840
     },
     "condition": "",
     "conseil": "",
     "document": "",
     "specifique": "standard",
     "placeholder": {
-      "R1": "Montant ou surface",
-      "R2": "Montant ou surface",
-      "R3": "Montant ou surface",
-      "R4": "Montant ou surface",
-      "R5": "Montant ou surface"
+      "R1": "Forfaitaire - 1 ou 0",
+      "R2": "Forfaitaire - 1 ou 0",
+      "R3": "Forfaitaire - 1 ou 0",
+      "R4": "Forfaitaire - 1 ou 0",
+      "R5": "Forfaitaire - 1 ou 0"
     },
     "image": "images/renovation_murs.webp"
   },
@@ -318,22 +318,22 @@
     "unite": "€/m²",
     "typeDeValeur": "fixe_par_categorie",
     "valeursParCategorie": {
-      "R1": 840,
-      "R2": 0,
-      "R3": 0,
-      "R4": 0,
-      "R5": 140
+      "R1": 8.8,
+      "R2": 17.6,
+      "R3": 26.4,
+      "R4": 35.2,
+      "R5": 52.8
     },
     "condition": "",
     "conseil": "",
     "document": "",
     "specifique": "standard",
     "placeholder": {
-      "R1": "Montant ou surface",
-      "R2": "Montant ou surface",
-      "R3": "Montant ou surface",
-      "R4": "Montant ou surface",
-      "R5": "Montant ou surface"
+      "R1": "Surface en m²",
+      "R2": "Surface en m²",
+      "R3": "Surface en m²",
+      "R4": "Surface en m²",
+      "R5": "Surface en m²"
     },
     "image": "images/renovation_murs.webp"
   },
@@ -344,22 +344,22 @@
     "unite": "€/m²",
     "typeDeValeur": "fixe_par_categorie",
     "valeursParCategorie": {
-      "R1": 840,
-      "R2": 0,
-      "R3": 0,
-      "R4": 0,
-      "R5": 140
+      "R1": 12,
+      "R2": 24,
+      "R3": 36,
+      "R4": 48,
+      "R5": 72
     },
     "condition": "",
     "conseil": "",
     "document": "",
     "specifique": "standard",
     "placeholder": {
-      "R1": "Montant ou surface",
-      "R2": "Montant ou surface",
-      "R3": "Montant ou surface",
-      "R4": "Montant ou surface",
-      "R5": "Montant ou surface"
+      "R1": "Surface en m²",
+      "R2": "Surface en m²",
+      "R3": "Surface en m²",
+      "R4": "Surface en m²",
+      "R5": "Surface en m²"
     },
     "image": "images/renovation_murs.webp"
   },
