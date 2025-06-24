@@ -5,7 +5,7 @@ let primes = [];
 
 export function initialiserPrimes() {
   console.log("📦 Chargement des données primes...");
-  fetch('data/primes.json')
+  fetch('data/primes-wallonie.json')
     .then(response => response.json())
     .then(data => {
       primes = data;

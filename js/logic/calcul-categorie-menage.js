@@ -4,31 +4,26 @@ console.log("✅ JS chargé");
 console.log("📊 Catégories importées :", categories);
 
 function calculerCategorieWallonie() {
-  // Récupérer les valeurs du DOM
   const situation = document.getElementById("situation").value;
   const revenuGlobalDemandeur = parseFloat(document.getElementById("revenu-global-demandeur").value) || 0;
-  const revenuDistinctDemandeur = parseFloat(document.getElementById("revenu-distinct-demandeur").value) || 0;
   const revenuGlobalConjoint = parseFloat(document.getElementById("revenu-global-conjoint").value) || 0;
-  const revenuDistinctConjoint = parseFloat(document.getElementById("revenu-distinct-conjoint").value) || 0;
   const personnesACharge = parseInt(document.getElementById("enfants").value) || 0;
 
-  // Calcul du revenu imposable total
-  let revenuTotal = revenuGlobalDemandeur + revenuDistinctDemandeur;
+  // 💰 Calcul du revenu imposable total (plus de revenu distinct)
+  let revenuTotal = revenuGlobalDemandeur;
 
   if (situation === "couple") {
-    revenuTotal += revenuGlobalConjoint + revenuDistinctConjoint;
+    revenuTotal += revenuGlobalConjoint;
   }
 
-  // Ajout du montant par personne à charge (5000 €)
+  // ➕ Ajustement pour personnes à charge
   const montantParPersonne = 5000;
   const plafondAugmente = revenuTotal - (personnesACharge * montantParPersonne);
 
-  // Trouver la bonne catégorie
-  const categorieTrouvee = categories.find(cat => {
-    return plafondAugmente >= cat.min && plafondAugmente <= cat.max;
-  });
+  const categorieTrouvee = categories.find(cat =>
+    plafondAugmente >= cat.min && plafondAugmente <= cat.max
+  );
 
-  // Affichage ou retour
   if (categorieTrouvee) {
     console.log("Catégorie déterminée :", categorieTrouvee.id, "-", categorieTrouvee.description);
     return categorieTrouvee;
@@ -49,17 +44,20 @@ function afficherCategorie(categorie) {
     spanResultat.textContent = "Catégorie non éligible ou données incomplètes.";
   }
 
-  resultDiv.classList.remove("d-none"); // 👈 obligatoire pour afficher
+  resultDiv.classList.remove("d-none");
 }
 
-
 function traiterCategorie() {
+  // 🔁 Réinitialiser l’affichage avant de recalculer
+  const spanResultat = document.getElementById("categorie-prime");
+  if (spanResultat) spanResultat.textContent = "Veuillez introduire vos données fiscales et de ménage";
+
   const categorie = calculerCategorieWallonie();
   afficherCategorie(categorie);
 }
 
 window.traiterCategorie = traiterCategorie;
-// 🧠 Affichage automatique si une catégorie est déjà stockée
+
 document.addEventListener("DOMContentLoaded", () => {
   const saved = localStorage.getItem("categorie_menage");
   if (saved) {

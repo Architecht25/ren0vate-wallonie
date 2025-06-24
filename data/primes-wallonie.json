@@ -7,9 +7,9 @@
     "typeDeValeur": "fixe_par_categorie",
     "valeursParCategorie": {
       "R1": 840,
-      "R2": 0,
-      "R3": 0,
-      "R4": 0,
+      "R2": 560,
+      "R3": 420,
+      "R4": 280,
       "R5": 140
     },
     "condition": "",
@@ -17,11 +17,11 @@
     "document": "",
     "specifique": "standard",
     "placeholder": {
-      "R1": "Montant ou surface",
-      "R2": "Montant ou surface",
-      "R3": "Montant ou surface",
-      "R4": "Montant ou surface",
-      "R5": "Montant ou surface"
+      "R1": "Forfaitaire - 1 ou 0",
+      "R2": "Forfaitaire - 1 ou 0",
+      "R3": "Forfaitaire - 1 ou 0",
+      "R4": "Forfaitaire - 1 ou 0",
+      "R5": "Forfaitaire - 1 ou 0"
     },
     "image": "images/audit.webp"
   },
@@ -32,22 +32,22 @@
     "unite": "€/m²",
     "typeDeValeur": "fixe_par_categorie",
     "valeursParCategorie": {
-      "R1": 840,
-      "R2": 0,
-      "R3": 0,
-      "R4": 0,
-      "R5": 140
+      "R1": 4,
+      "R2": 8,
+      "R3": 12,
+      "R4": 16,
+      "R5": 24
     },
     "condition": "",
     "conseil": "",
     "document": "",
     "specifique": "standard",
     "placeholder": {
-      "R1": "Montant ou surface",
-      "R2": "Montant ou surface",
-      "R3": "Montant ou surface",
-      "R4": "Montant ou surface",
-      "R5": "Montant ou surface"
+      "R1": "surface en m²",
+      "R2": "surface en m²",
+      "R3": "surface en m²",
+      "R4": "surface en m²",
+      "R5": "surface en m²"
     },
     "image": "images/renovation_toiture.webp"
   },
@@ -58,22 +58,22 @@
     "unite": "€",
     "typeDeValeur": "fixe_par_categorie",
     "valeursParCategorie": {
-      "R1": 840,
-      "R2": 0,
-      "R3": 0,
-      "R4": 0,
-      "R5": 140
+      "R1": 100,
+      "R2": 200,
+      "R3": 300,
+      "R4": 400,
+      "R5": 600
     },
     "condition": "",
     "conseil": "",
     "document": "",
     "specifique": "standard",
     "placeholder": {
-      "R1": "Montant ou surface",
-      "R2": "Montant ou surface",
-      "R3": "Montant ou surface",
-      "R4": "Montant ou surface",
-      "R5": "Montant ou surface"
+      "R1": "Forfaitaire - 1 ou 0",
+      "R2": "Forfaitaire - 1 ou 0",
+      "R3": "Forfaitaire - 1 ou 0",
+      "R4": "Forfaitaire - 1 ou 0",
+      "R5": "Forfaitaire - 1 ou 0"
     },
     "image": "images/renovation_toiture.webp"
   },
@@ -84,22 +84,22 @@
     "unite": "€",
     "typeDeValeur": "fixe_par_categorie",
     "valeursParCategorie": {
-      "R1": 840,
-      "R2": 0,
-      "R3": 0,
-      "R4": 0,
-      "R5": 140
+      "R1": 40,
+      "R2": 50,
+      "R3": 120,
+      "R4": 160,
+      "R5": 240
     },
     "condition": "",
     "conseil": "",
     "document": "",
     "specifique": "standard",
     "placeholder": {
-      "R1": "Montant ou surface",
-      "R2": "Montant ou surface",
-      "R3": "Montant ou surface",
-      "R4": "Montant ou surface",
-      "R5": "Montant ou surface"
+      "R1": "Forfaitaire - 1 ou 0",
+      "R2": "Forfaitaire - 1 ou 0",
+      "R3": "Forfaitaire - 1 ou 0",
+      "R4": "Forfaitaire - 1 ou 0",
+      "R5": "Forfaitaire - 1 ou 0"
     },
     "image": "images/renovation_toiture.webp"
   },
@@ -110,22 +110,22 @@
     "unite": "€/m²",
     "typeDeValeur": "fixe_par_categorie",
     "valeursParCategorie": {
-      "R1": 840,
-      "R2": 0,
-      "R3": 0,
-      "R4": 0,
-      "R5": 140
+      "R1": 20,
+      "R2": 40,
+      "R3": 60,
+      "R4": 80,
+      "R5": 120
     },
     "condition": "",
     "conseil": "",
     "document": "",
     "specifique": "standard",
     "placeholder": {
-      "R1": "Montant ou surface",
-      "R2": "Montant ou surface",
-      "R3": "Montant ou surface",
-      "R4": "Montant ou surface",
-      "R5": "Montant ou surface"
+      "R1": "surface en m²",
+      "R2": "surface en m²",
+      "R3": "surface en m²",
+      "R4": "surface en m²",
+      "R5": "surface en m²"
     },
     "image": "images/renovation_toiture.webp"
   },
@@ -136,22 +136,22 @@
     "unite": "€/m²",
     "typeDeValeur": "fixe_par_categorie",
     "valeursParCategorie": {
-      "R1": 840,
-      "R2": 0,
-      "R3": 0,
-      "R4": 0,
-      "R5": 140
+      "R1": 26,
+      "R2": 52,
+      "R3": 78,
+      "R4": 104,
+      "R5": 156
     },
     "condition": "",
     "conseil": "",
     "document": "",
     "specifique": "standard",
     "placeholder": {
-      "R1": "Montant ou surface",
-      "R2": "Montant ou surface",
-      "R3": "Montant ou surface",
-      "R4": "Montant ou surface",
-      "R5": "Montant ou surface"
+      "R1": "surface en m²",
+      "R2": "surface en m²",
+      "R3": "surface en m²",
+      "R4": "surface en m²",
+      "R5": "surface en m²"
     },
     "image": "images/renovation_toiture.webp"
   },
