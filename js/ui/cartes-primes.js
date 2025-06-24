@@ -1,4 +1,4 @@
-import { getCategorieId } from '../logic/calcul-categories.js';
+import { getCategorieId } from '../logic/calcul-categorie-menage.js';
 import { calculerPrimePEB } from '../logic/primes.js';
 import { calculerTotalToutesCartes } from '../logic/total-primes.js';
 

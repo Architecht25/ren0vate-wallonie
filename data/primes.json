@@ -1,484 +1,1146 @@
 [
- {
-  "id": "isolation_toiture",
-  "slug": "isolation_toiture",
-  "titre": "Isolation de la toiture",
-  "unite": "€",
-  "typeDeValeur": "dynamique",
-  "eligible_categories": ["1", "2", "3", "4"],
-  "valeursParCategorie": {
-    "4": {
-      "type": "pourcentage_et_plafond",
-      "pourcentage": 50,
-      "plafond": 5750,
-      "condition": "isolation et rénovation"
+  {
+    "id": "réalisation_d'un_audit_logement",
+    "slug": "réalisation_d'un_audit_logement",
+    "titre": "Réalisation d'un audit logement",
+    "unite": "€/audit",
+    "typeDeValeur": "fixe_par_categorie",
+    "valeursParCategorie": {
+      "R1": 840,
+      "R2": 0,
+      "R3": 0,
+      "R4": 0,
+      "R5": 140
     },
-    "3": {
-      "type": "pourcentage_et_plafond",
-      "pourcentage": 35,
-      "plafond": 4025,
-      "condition": "isolation et rénovation"
+    "condition": "",
+    "conseil": "",
+    "document": "",
+    "specifique": "standard",
+    "placeholder": {
+      "R1": "Montant ou surface",
+      "R2": "Montant ou surface",
+      "R3": "Montant ou surface",
+      "R4": "Montant ou surface",
+      "R5": "Montant ou surface"
     },
-    "2": {
-      "type": "montant_m2_et_limite",
-      "montant_m2": 16,
-      "surface_max": 100,
-      "plafond_pourcentage": 25,
-      "condition": "isolation seule"
+    "image": ""
+  },
+  {
+    "id": "toiture_-_remplacement_de_la_couverture__m²",
+    "slug": "toiture_-_remplacement_de_la_couverture__m²",
+    "titre": "Toiture - Remplacement de la couverture (/m²)",
+    "unite": "€/m²",
+    "typeDeValeur": "fixe_par_categorie",
+    "valeursParCategorie": {
+      "R1": 840,
+      "R2": 0,
+      "R3": 0,
+      "R4": 0,
+      "R5": 140
     },
-    "1": {
-      "type": "montant_m2_et_limite",
-      "montant_m2": 8,
-      "surface_max": 100,
-      "plafond_pourcentage": 20,
-      "condition": "isolation seule"
-    }
-  },
-  "condition": "R ≥ 4.5 m²K/W pour toiture inclinée, plate et grenier",
-  "conseil": "Utiliser un isolant certifié (laine minérale, PIR, etc.) et vérifier l'étanchéité.",
-  "document": "Facture détaillée + devis ou métré + attestation de l’entrepreneur",
-  "specifique": " XX ",
-  "placeholder": {
-    "1": "Surface en m²",
-    "2": "Surface en m²",
-    "3": "Montant total de la facture",
-    "4": "Montant total de la facture"
-  },
-  "image": "images/isolation_toiture.webp"
-},
-{
-  "id": "isolation_murs_cat12",
-  "slug": "isolation_murs_cat12",
-  "titre": "Isolation des murs extérieurs (cat. 1-2)",
-  "unite": "m²",
-  "typeDeValeur": "surface_et_type",
-  "categorieLimite": ["1", "2"],
-  "eligible_categories": ["1", "2"],
-  "valeursParCategorie": {
-    "2": {
-      "type": "montant_variable_m2_et_limite",
-      "montants_m2": {
-        "mur_creux": 7.5,
-        "interieur": 15,
-        "exterieur": 22.5
-      },
-      "surface_max": 100,
-      "plafond_pourcentage": 25,
-      "condition": "isolation seule"
+    "condition": "",
+    "conseil": "",
+    "document": "",
+    "specifique": "standard",
+    "placeholder": {
+      "R1": "Montant ou surface",
+      "R2": "Montant ou surface",
+      "R3": "Montant ou surface",
+      "R4": "Montant ou surface",
+      "R5": "Montant ou surface"
     },
-    "1": {
-      "type": "montant_variable_m2_et_limite",
-      "montants_m2": {
-        "mur_creux": 5,
-        "interieur": 10,
-        "exterieur": 15
-      },
-      "surface_max": 100,
-      "plafond_pourcentage": 20,
-      "condition": "isolation seule"
-    }
+    "image": ""
   },
-  "condition": "R ≥ 3.0 m²K/W (selon méthode – mur creux: 5 cm de creux et R≥ 2, intérieur:2.0 ou extérieur:3.0)",
-  "conseil": "Vérifiez les ponts thermiques, choisissez la méthode adaptée (spouwmuur, intérieur, extérieur).",
-  "document": "Facture + devis ou métré + attestation de l’entrepreneur. Si isolation par l'intérieur, alors attestation de l'entrepreneur, il faut un architecte ou un entrepreneur avec numéro BIM.",
-  "specifique": "Si isolation par murs creux/en coulisse - attestation STS et numéro STS présent dans la facture",
-  "placeholder": {
-    "1": "Surface en m²",
-    "2": "Surface en m²"
-  },
-  "image": "images/isolation_murs_ext.webp"
-},
-{
-  "id": "isolation_murs_cat34",
-  "slug": "isolation_murs_cat34",
-  "titre": "Isolation des murs extérieurs (cat. 3-4)",
-  "unite": "€",
-  "typeDeValeur": "montant_facture",
-  "categorieLimite": ["3", "4"],
-  "eligible_categories": ["3", "4"],
-  "valeursParCategorie": {
-    "4": {
-      "type": "pourcentage_et_plafond",
-      "pourcentage": 50,
-      "plafond": 5000,
-      "condition": "isolation et rénovation"
+  {
+    "id": "toiture_-_appropriation_de_la_charpente",
+    "slug": "toiture_-_appropriation_de_la_charpente",
+    "titre": "Toiture – Appropriation de la charpente",
+    "unite": "€",
+    "typeDeValeur": "fixe_par_categorie",
+    "valeursParCategorie": {
+      "R1": 840,
+      "R2": 0,
+      "R3": 0,
+      "R4": 0,
+      "R5": 140
     },
-    "3": {
-      "type": "pourcentage_et_plafond",
-      "pourcentage": 35,
-      "plafond": 3500,
-      "condition": "isolation et rénovation"
-    }
-  },
-  "condition": "R ≥ 3.0 m²K/W (selon méthode – mur creux: 5 cm de creux et R≥ 2, intérieur:2.0 ou extérieur:3.0)",
-  "conseil": "Vérifiez les ponts thermiques, choisissez la méthode adaptée (spouwmuur, intérieur, extérieur).",
-  "document": "Facture + devis ou métré + attestation de l’entrepreneur. si isolation par l'intérieur, alors attestation de l'entrepreneur, il faut un architecte ou un entrepreneur avec numéro BIM.",
-  "specifique": "Si isolation par murs creux/en coulisse - attestation STS et numéro STS présent dans la facture",
-  "placeholder": {
-    "3": "Montant total de la facture",
-    "4": "Montant total de la facture"
-  },
-  "image": "images/isolation_murs_ext.webp"
-},
-{
-  "id": "isolation_sol",
-  "slug": "isolation_sol",
-  "titre": "Isolation du sol / plancher bas et sol cave",
-  "unite": "m²",
-  "typeDeValeur": "surface",
-  "eligible_categories": ["1", "2", "3", "4"],
-  "valeursParCategorie": {
-    "4": {
-      "type": "pourcentage_et_plafond",
-      "pourcentage": 50,
-      "plafond": 1500,
-      "condition": "isolation et rénovation"
+    "condition": "",
+    "conseil": "",
+    "document": "",
+    "specifique": "standard",
+    "placeholder": {
+      "R1": "Montant ou surface",
+      "R2": "Montant ou surface",
+      "R3": "Montant ou surface",
+      "R4": "Montant ou surface",
+      "R5": "Montant ou surface"
     },
-    "3": {
-      "type": "pourcentage_et_plafond",
-      "pourcentage": 35,
-      "plafond": 1050,
-      "condition": "isolation et rénovation"
-    },
-    "2": {
-      "type": "montant_m2_et_limite",
-      "montant_m2": 9,
-      "surface_max": 75,
-      "plafond_pourcentage": 25,
-      "condition": "isolation seule"
-    },
-    "1": {
-      "type": "montant_m2_et_limite",
-      "montant_m2": 6,
-      "surface_max": 75,
-      "plafond_pourcentage": 20,
-      "condition": "isolation seule"
-    }
+    "image": ""
   },
-  "condition": "R ≥ 2.0 m²K/W + Isolation thermique du plancher bas sur vide sanitaire ou terre-plein",
-  "conseil": "Privilégier les isolants à forte résistance thermique. Traiter également les ponts thermiques si possible.",
-  "document": "Facture détaillée + devis ou métré + attestation de l’entrepreneur",
-  "specifique": " XX ",
-  "placeholder": {
-    "1": "Surface en m²",
-    "2": "Surface en m²",
-    "3": "Montant total de la facture",
-    "4": "Montant total de la facture"
-  },
-  "image": "images/isolation_sol.webp"
-},
-{
-  "id": "chassis_portes",
-  "slug": "ramen_deuren",
-  "titre": "Remplacement des châssis et portes extérieures",
-  "unite": "m²",
-  "typeDeValeur": "surface",
-  "eligible_categories": ["1", "2", "3", "4"],
-  "valeursParCategorie": {
-    "4": {
-      "type": "pourcentage_et_plafond",
-      "pourcentage": 50,
-      "plafond": 5250,
-      "condition": "remplacement du vitrage et des menuiseries extérieures – ventilation obligatoire"
+  {
+    "id": "toiture_-_remplacement_du_dispositif_de_collecte_et_d'évacuation_des_eaux_pluviales",
+    "slug": "toiture_-_remplacement_du_dispositif_de_collecte_et_d'évacuation_des_eaux_pluviales",
+    "titre": "Toiture – Remplacement du dispositif de collecte et d'évacuation des eaux pluviales",
+    "unite": "€",
+    "typeDeValeur": "fixe_par_categorie",
+    "valeursParCategorie": {
+      "R1": 840,
+      "R2": 0,
+      "R3": 0,
+      "R4": 0,
+      "R5": 140
     },
-    "3": {
-      "type": "pourcentage_et_plafond",
-      "pourcentage": 35,
-      "plafond": 3675,
-      "condition": "remplacement du vitrage et des menuiseries extérieures – ventilation obligatoire"
+    "condition": "",
+    "conseil": "",
+    "document": "",
+    "specifique": "standard",
+    "placeholder": {
+      "R1": "Montant ou surface",
+      "R2": "Montant ou surface",
+      "R3": "Montant ou surface",
+      "R4": "Montant ou surface",
+      "R5": "Montant ou surface"
     },
-    "2": {
-      "type": "montant_m2_et_limite",
-      "montant_m2": 64,
-      "surface_max": 20,
-      "plafond_pourcentage": 25,
-      "condition": "remplacement du vitrage uniquement – ventilation obligatoire"
+    "image": ""
+  },
+  {
+    "id": "toiture_-_isolation_thermique_du_toit_ou_des_combles__m²",
+    "slug": "toiture_-_isolation_thermique_du_toit_ou_des_combles__m²",
+    "titre": "Toiture – Isolation thermique du toit ou des combles (/m²)",
+    "unite": "€/m²",
+    "typeDeValeur": "fixe_par_categorie",
+    "valeursParCategorie": {
+      "R1": 840,
+      "R2": 0,
+      "R3": 0,
+      "R4": 0,
+      "R5": 140
     },
-    "1": {
-      "type": "montant_m2_et_limite",
-      "montant_m2": 30,
-      "surface_max": 20,
-      "plafond_pourcentage": 20,
-      "condition": "remplacement du vitrage uniquement – ventilation obligatoire"
-    }
-  },
-  "condition": "Vitrage HR++ (U ≤ 1.0 W/m²K) + ventilation conforme (type invisivent dans toutes les pièces sèches ou VMC double flux (système D))",
-  "conseil": "Veillez à intégrer un système de ventilation efficace lors du remplacement des menuiseries.",
-  "document": "Facture + bordereau de commande + attestation de l'entrepreneur + preuve du respect des normes de ventilation",
-  "specifique": " XX ",
-  "placeholder": {
-    "1": "Surface en m²",
-    "2": "Surface en m²",
-    "3": "Montant total de la facture",
-    "4": "Montant total de la facture"
-  },
-  "image": "images/remplacement_chassis.webp"
-},
-{
-  "id": "preparatifs_isolation",
-  "slug": "voorbereiding_isolatie",
-  "titre": "Travaux préparatoires pour l’isolation",
-  "unite": "€",
-  "typeDeValeur": "facture",
-  "eligible_categories": ["3", "4"],
-  "valeursParCategorie": {
-    "4": {
-      "type": "pourcentage_et_plafond",
-      "pourcentage": 50,
-      "plafond": 2000,
-      "condition": "Travaux préparatoires en vue d'une isolation – uniquement si la prime isolation est demandée"
+    "condition": "",
+    "conseil": "",
+    "document": "",
+    "specifique": "standard",
+    "placeholder": {
+      "R1": "Montant ou surface",
+      "R2": "Montant ou surface",
+      "R3": "Montant ou surface",
+      "R4": "Montant ou surface",
+      "R5": "Montant ou surface"
     },
-    "3": {
-      "type": "pourcentage_et_plafond",
-      "pourcentage": 35,
-      "plafond": 1400,
-      "condition": "Travaux préparatoires en vue d'une isolation – uniquement si la prime isolation est demandée"
+    "image": ""
+  },
+  {
+    "id": "toiture_-_isolation_thermique_du_toit_ou_des_combles__m²_-_biosource",
+    "slug": "toiture_-_isolation_thermique_du_toit_ou_des_combles__m²_-_biosource",
+    "titre": "Toiture – Isolation thermique du toit ou des combles (/m²) - BIOSOURCE",
+    "unite": "€/m²",
+    "typeDeValeur": "fixe_par_categorie",
+    "valeursParCategorie": {
+      "R1": 840,
+      "R2": 0,
+      "R3": 0,
+      "R4": 0,
+      "R5": 140
     },
-    "2": {
-      "type": "prime_conditionnelle",
-      "valeur": 0,
-      "condition": "Prime complémentaire uniquement si la prime isolation est demandée"
+    "condition": "",
+    "conseil": "",
+    "document": "",
+    "specifique": "standard",
+    "placeholder": {
+      "R1": "Montant ou surface",
+      "R2": "Montant ou surface",
+      "R3": "Montant ou surface",
+      "R4": "Montant ou surface",
+      "R5": "Montant ou surface"
     },
-    "1": {
-      "type": "prime_conditionnelle",
-      "valeur": 0,
-      "condition": "Prime complémentaire uniquement si la prime isolation est demandée"
-    }
+    "image": ""
   },
-  "condition": "Les travaux doivent précéder une isolation effective et être facturés séparément",
-  "conseil": "Pensez à intégrer ces travaux dans le devis global mais à les distinguer clairement",
-  "document": "Facture détaillée + devis ou métré + preuve (photos!) des travaux réalisés en amont d’une isolation",
-  "specifique": " XX ",
-  "placeholder": {
-    "1": "",
-    "2": "",
-    "3": "Montant total de la facture",
-    "4": "Montant total de la facture"
-  },
-  "image": "images/preparation_isolation.webp"
-},
-{
-  "id": "preparatifs_techniques",
-  "slug": "voorbereiding_sanitair_elec",
-  "titre": "Travaux préparatoires sanitaires et électricité",
-  "unite": "€",
-  "typeDeValeur": "facture",
-  "eligible_categories": ["3", "4"],
-  "valeursParCategorie": {
-    "4": {
-      "type": "pourcentage_et_plafond",
-      "pourcentage": 50,
-      "plafond": 3000
+  {
+    "id": "assèchement_des_murs_-_infiltration___m²",
+    "slug": "assèchement_des_murs_-_infiltration___m²",
+    "titre": "Assèchement des murs – infiltration  (/m²)",
+    "unite": "€/m²",
+    "typeDeValeur": "fixe_par_categorie",
+    "valeursParCategorie": {
+      "R1": 840,
+      "R2": 0,
+      "R3": 0,
+      "R4": 0,
+      "R5": 140
     },
-    "3": {
-      "type": "pourcentage_et_plafond",
-      "pourcentage": 35,
-      "plafond": 2100
-    }
-  },
-  "condition": "Doit concerner les réseaux intérieurs à remplacer avant travaux principaux (chauffage, électricité, sanitaire)",
-  "conseil": "Séparez ces interventions dans le devis pour les rendre éligibles. Attention nous parlons bien des typaux par exemple et non les appareils eux-mêmes.",
-  "document": "Facture + devis ou métré + justificatif des travaux concernés (photos!) et l'attestation de conformité si applicable",
-  "specifique": " XX ",
-  "placeholder": {
-    "1": "",
-    "2": "",
-    "3": "Montant total de la facture",
-    "4": "Montant total de la facture"
-  },
-  "image": "images/electricité.webp"
-},
-{
-  "id": "pompe_a_chaleur",
-  "slug": "warmtepomp",
-  "titre": "Pompe à chaleur",
-  "unite": "type_de_pompe",
-  "typeDeValeur": "forfait",
-  "eligible_categories": ["1", "2", "3", "4"],
-  "valeursParCategorie": {
-    "4": {
-      "type": "forfait_et_plafond_facture",
-      "forfaits": {
-        "geothermique": 8000,
-        "air_eau": 6000,
-        "air_air": 600,
-        "hybride": 4000
-      },
-      "plafond_pourcentage": 50
+    "condition": "",
+    "conseil": "",
+    "document": "",
+    "specifique": "standard",
+    "placeholder": {
+      "R1": "Montant ou surface",
+      "R2": "Montant ou surface",
+      "R3": "Montant ou surface",
+      "R4": "Montant ou surface",
+      "R5": "Montant ou surface"
     },
-    "3": {
-      "type": "forfait_et_plafond_facture",
-      "forfaits": {
-        "geothermique": 6000,
-        "air_eau": 4500,
-        "air_air": 450,
-        "hybride": 3000
-      },
-      "plafond_pourcentage": 35
+    "image": ""
+  },
+  {
+    "id": "assèchement_des_murs_-_humidité_ascensionnelle___m²",
+    "slug": "assèchement_des_murs_-_humidité_ascensionnelle___m²",
+    "titre": "Assèchement des murs – humidité ascensionnelle  (/m²)",
+    "unite": "€/m²",
+    "typeDeValeur": "fixe_par_categorie",
+    "valeursParCategorie": {
+      "R1": 840,
+      "R2": 0,
+      "R3": 0,
+      "R4": 0,
+      "R5": 140
     },
-    "2": {
-      "type": "forfait_et_plafond_facture",
-      "forfaits": {
-        "geothermique": 4000,
-        "air_eau": 2250,
-        "air_air": 300,
-        "hybride": 1500
-      },
-      "plafond_pourcentage": 25
+    "condition": "",
+    "conseil": "",
+    "document": "",
+    "specifique": "standard",
+    "placeholder": {
+      "R1": "Montant ou surface",
+      "R2": "Montant ou surface",
+      "R3": "Montant ou surface",
+      "R4": "Montant ou surface",
+      "R5": "Montant ou surface"
     },
-    "1": {
-      "type": "forfait_et_plafond_facture",
-      "forfaits": {
-        "geothermique": 4000,
-        "air_eau": 2250,
-        "air_air": 300,
-        "hybride": 1500
-      },
-      "plafond_pourcentage": 20
-    }
+    "image": ""
   },
-  "condition": "Uniquement pour bâtiments de plus de 5 ans avec permis d’environnement",
-  "conseil": "Vérifiez si le type de pompe est bien éligible et installé par un professionnel agréé + l'installation doit être conforme aux normes PEB, bâtiment de +5 ans.",
-  "document": "Facture détaillée + devis ou métré + attestation de conformité de l’installateur - numéro RESERT obligatoire pour toutes les pompes à chaleur + label européen. si Air/eau, fonction réversible soit non active.",
-  "specifique": "Pour une PAC air/eau, si elle n'a pas le refroidissement actif, il faut une attestation de l'entrepreneur. Si elle en dispose, il faut respecter 3 conditions 1/panneaux solaires installés ET enregistrés auprès de Fluvius 2/la PAC = moyen de chauffage principal 3/ factures émises au moins depuis 2023 ",
-  "placeholder": {
-    "1": "Choisissez le type de pompe",
-    "2": "Choisissez le type de pompe",
-    "3": "Choisissez le type de pompe",
-    "4": "Choisissez le type de pompe"
-  },
-  "image": "images/pac_géothermique.webp"
-},
-{
-  "id": "chauffe_eau_thermodynamique",
-  "slug": "warmtepompboiler",
-  "titre": "Chauffe-eau thermodynamique",
-  "unite": "forfait",
-  "typeDeValeur": "montant",
-  "eligible_categories": ["1", "2", "3", "4"],
-  "valeursParCategorie": {
-    "4": {
-      "type": "forfait_et_plafond_facture",
-      "forfait": 1200,
-      "plafond_pourcentage": 50
+  {
+    "id": "renforcement_des_murs_instables_ou_démolition_reconstruction__m²",
+    "slug": "renforcement_des_murs_instables_ou_démolition_reconstruction__m²",
+    "titre": "Renforcement des murs instables ou démolition/reconstruction (/m²)",
+    "unite": "€/m²",
+    "typeDeValeur": "fixe_par_categorie",
+    "valeursParCategorie": {
+      "R1": 840,
+      "R2": 0,
+      "R3": 0,
+      "R4": 0,
+      "R5": 140
     },
-    "3": {
-      "type": "forfait_et_plafond_facture",
-      "forfait": 1050,
-      "plafond_pourcentage": 35
+    "condition": "",
+    "conseil": "",
+    "document": "",
+    "specifique": "standard",
+    "placeholder": {
+      "R1": "Montant ou surface",
+      "R2": "Montant ou surface",
+      "R3": "Montant ou surface",
+      "R4": "Montant ou surface",
+      "R5": "Montant ou surface"
     },
-    "2": {
-      "type": "forfait_et_plafond_facture",
-      "forfait": 900,
-      "plafond_pourcentage": 25
+    "image": ""
+  },
+  {
+    "id": "remplacement_des_supports_des_aires_de_circulation___m²",
+    "slug": "remplacement_des_supports_des_aires_de_circulation___m²",
+    "titre": "Remplacement des supports des aires de circulation  (/m²)",
+    "unite": "€/m²",
+    "typeDeValeur": "fixe_par_categorie",
+    "valeursParCategorie": {
+      "R1": 840,
+      "R2": 0,
+      "R3": 0,
+      "R4": 0,
+      "R5": 140
     },
-    "1": {
-      "type": "forfait_et_plafond_facture",
-      "forfait": 900,
-      "plafond_pourcentage": 20
-    }
-  },
-  "condition": "Système à pompe à chaleur pour eau chaude sanitaire – non combiné avec boiler électrique classique",
-  "conseil": "L’installation doit être effectuée par un professionnel agréé et être bien dimensionnée selon les besoins du foyer + bâtiment de plus de 5 ans et respect des normes PEB.",
-  "document": "Facture + devis ou métré + label euorpéen + attestation de conformité de l'entrepreneur",
-  "specifique": " XX ",
-  "placeholder": {
-    "1": "Montant total de la facture",
-    "2": "Montant total de la facture",
-    "3": "Montant total de la facture",
-    "4": "Montant total de la facture"
-  },
-  "image": "images/pac_hybride.webp"
-},
-{
-  "id": "renovation_toiture",
-  "slug": "renovation_toiture",
-  "titre": "Travaux de rénovation associés - Toiture",
-  "unite": "€",
-  "typeDeValeur": "dynamique",
-  "eligible_categories": ["3", "4"],
-  "categorie_visible": ["3", "4"],
-  "valeursParCategorie": {
-    "4": {
-      "type": "pourcentage_et_plafond",
-      "pourcentage": 50,
-      "plafond": 5750
+    "condition": "",
+    "conseil": "",
+    "document": "",
+    "specifique": "standard",
+    "placeholder": {
+      "R1": "Montant ou surface",
+      "R2": "Montant ou surface",
+      "R3": "Montant ou surface",
+      "R4": "Montant ou surface",
+      "R5": "Montant ou surface"
     },
-    "3": {
-      "type": "pourcentage_et_plafond",
-      "pourcentage": 35,
-      "plafond": 4025
-    }
+    "image": ""
   },
-  "condition": "Travaux de rénovation associés à l’isolation de toiture + Factures admissibles liées à la structure, couverture, accessoires toiture, étanchéité, corniche, descente d'eau pluviale.",
-  "conseil": "Peuvent inclure dépose de l'ancienne couverture, renforcement charpente, etc.",
-  "document": "Facture détaillée mentionnant les postes concernés + devis ou métré.",
-  "specifique": " XX ",
-  "placeholder": {
-
-    "3": "Montant total des travaux toiture hors isolation",
-    "4": "Montant total des travaux toiture hors isolation"
-  },
-  "image": "images/renovation_toiture.webp"
-},
-{
-  "id": "renovation_murs",
-  "slug": "renovation_murs",
-  "titre": "Travaux de rénovation associés - Murs",
-  "unite": "€",
-  "typeDeValeur": "dynamique",
-  "eligible_categories": ["3", "4"],
-  "categorie_visible": ["3", "4"],
-  "valeursParCategorie": {
-    "4": {
-      "type": "pourcentage_et_plafond",
-      "pourcentage": 50,
-      "plafond": 5750
+  {
+    "id": "élimination_de_la_mérule",
+    "slug": "élimination_de_la_mérule",
+    "titre": "Élimination de la mérule",
+    "unite": "€",
+    "typeDeValeur": "fixe_par_categorie",
+    "valeursParCategorie": {
+      "R1": 840,
+      "R2": 0,
+      "R3": 0,
+      "R4": 0,
+      "R5": 140
     },
-    "3": {
-      "type": "pourcentage_et_plafond",
-      "pourcentage": 35,
-      "plafond": 4025
-    }
-  },
-  "condition": "Travaux de rénovation associés à l’isolation des murs + Travaux admissibles hors isolation, ex. bardage, crépi, traitement humidité",
-  "conseil": "Inclut travaux préparatoires ou de remise en état après isolation",
-  "document": "Facture détaillée avec ventilation des coûts + devis ou métré.",
-  "specifique": " XX ",
-  "placeholder": {
-    "3": "Montant total des travaux murs hors isolation",
-    "4": "Montant total des travaux murs hors isolation"
-  },
-  "image": "images/renovation_murs.webp"
-},
-{
-  "id": "renovation_sol",
-  "slug": "renovation_sol",
-  "titre": "Travaux de rénovation associés - Sol",
-  "unite": "€",
-  "typeDeValeur": "dynamique",
-  "eligible_categories": ["3", "4"],
-  "categorie_visible": ["3", "4"],
-  "valeursParCategorie": {
-    "4": {
-      "type": "pourcentage_et_plafond",
-      "pourcentage": 50,
-      "plafond": 5750
+    "condition": "",
+    "conseil": "",
+    "document": "",
+    "specifique": "standard",
+    "placeholder": {
+      "R1": "Montant ou surface",
+      "R2": "Montant ou surface",
+      "R3": "Montant ou surface",
+      "R4": "Montant ou surface",
+      "R5": "Montant ou surface"
     },
-    "3": {
-      "type": "pourcentage_et_plafond",
-      "pourcentage": 35,
-      "plafond": 4025
-    }
+    "image": ""
   },
-  "condition": "Travaux de rénovation associés à l’isolation du sol + Travaux admissibles incluant chape, ragréage, reprise du revêtement, étanchéite.",
-  "conseil": "Documentez bien les postes techniques hors isolant",
-  "document": "Facture séparant les postes d’isolation et de rénovation + devis ou métré.",
-  "specifique": " XX ",
-  "placeholder": {
-    "3": "Montant total des travaux sols hors isolation",
-    "4": "Montant total des travaux sols hors isolation"
+  {
+    "id": "élimination_du_radon",
+    "slug": "élimination_du_radon",
+    "titre": "Élimination du radon",
+    "unite": "€",
+    "typeDeValeur": "fixe_par_categorie",
+    "valeursParCategorie": {
+      "R1": 840,
+      "R2": 0,
+      "R3": 0,
+      "R4": 0,
+      "R5": 140
+    },
+    "condition": "",
+    "conseil": "",
+    "document": "",
+    "specifique": "standard",
+    "placeholder": {
+      "R1": "Montant ou surface",
+      "R2": "Montant ou surface",
+      "R3": "Montant ou surface",
+      "R4": "Montant ou surface",
+      "R5": "Montant ou surface"
+    },
+    "image": ""
   },
-  "image": "images/renovation_sol.webp"
-}
+  {
+    "id": "isolation_thermique_des_murs__m²",
+    "slug": "isolation_thermique_des_murs__m²",
+    "titre": "Isolation thermique des murs (/m²)",
+    "unite": "€/m²",
+    "typeDeValeur": "fixe_par_categorie",
+    "valeursParCategorie": {
+      "R1": 840,
+      "R2": 0,
+      "R3": 0,
+      "R4": 0,
+      "R5": 140
+    },
+    "condition": "",
+    "conseil": "",
+    "document": "",
+    "specifique": "standard",
+    "placeholder": {
+      "R1": "Montant ou surface",
+      "R2": "Montant ou surface",
+      "R3": "Montant ou surface",
+      "R4": "Montant ou surface",
+      "R5": "Montant ou surface"
+    },
+    "image": ""
+  },
+  {
+    "id": "isolation_thermique_des_murs__m²_-_biosource",
+    "slug": "isolation_thermique_des_murs__m²_-_biosource",
+    "titre": "Isolation thermique des murs (/m²) - BIOSOURCE",
+    "unite": "€/m²",
+    "typeDeValeur": "fixe_par_categorie",
+    "valeursParCategorie": {
+      "R1": 840,
+      "R2": 0,
+      "R3": 0,
+      "R4": 0,
+      "R5": 140
+    },
+    "condition": "",
+    "conseil": "",
+    "document": "",
+    "specifique": "standard",
+    "placeholder": {
+      "R1": "Montant ou surface",
+      "R2": "Montant ou surface",
+      "R3": "Montant ou surface",
+      "R4": "Montant ou surface",
+      "R5": "Montant ou surface"
+    },
+    "image": ""
+  },
+  {
+    "id": "isolation_thermique_des_sols__m²",
+    "slug": "isolation_thermique_des_sols__m²",
+    "titre": "Isolation thermique des sols (/m²)",
+    "unite": "€/m²",
+    "typeDeValeur": "fixe_par_categorie",
+    "valeursParCategorie": {
+      "R1": 840,
+      "R2": 0,
+      "R3": 0,
+      "R4": 0,
+      "R5": 140
+    },
+    "condition": "",
+    "conseil": "",
+    "document": "",
+    "specifique": "standard",
+    "placeholder": {
+      "R1": "Montant ou surface",
+      "R2": "Montant ou surface",
+      "R3": "Montant ou surface",
+      "R4": "Montant ou surface",
+      "R5": "Montant ou surface"
+    },
+    "image": ""
+  },
+  {
+    "id": "isolation_thermique_des_sols__m²_-_biosource",
+    "slug": "isolation_thermique_des_sols__m²_-_biosource",
+    "titre": "Isolation thermique des sols (/m²) - BIOSOURCE",
+    "unite": "€/m²",
+    "typeDeValeur": "fixe_par_categorie",
+    "valeursParCategorie": {
+      "R1": 840,
+      "R2": 0,
+      "R3": 0,
+      "R4": 0,
+      "R5": 140
+    },
+    "condition": "",
+    "conseil": "",
+    "document": "",
+    "specifique": "standard",
+    "placeholder": {
+      "R1": "Montant ou surface",
+      "R2": "Montant ou surface",
+      "R3": "Montant ou surface",
+      "R4": "Montant ou surface",
+      "R5": "Montant ou surface"
+    },
+    "image": ""
+  },
+  {
+    "id": "isolation_finition_planchers__m²",
+    "slug": "isolation_finition_planchers__m²",
+    "titre": "Isolation finition planchers (/m²)",
+    "unite": "€/m²",
+    "typeDeValeur": "fixe_par_categorie",
+    "valeursParCategorie": {
+      "R1": 840,
+      "R2": 0,
+      "R3": 0,
+      "R4": 0,
+      "R5": 140
+    },
+    "condition": "",
+    "conseil": "",
+    "document": "",
+    "specifique": "standard",
+    "placeholder": {
+      "R1": "Montant ou surface",
+      "R2": "Montant ou surface",
+      "R3": "Montant ou surface",
+      "R4": "Montant ou surface",
+      "R5": "Montant ou surface"
+    },
+    "image": ""
+  },
+  {
+    "id": "remplacement_des_menuiseries_vitrages_extérieurs__m²",
+    "slug": "remplacement_des_menuiseries_vitrages_extérieurs__m²",
+    "titre": "Remplacement des menuiseries/vitrages extérieurs (/m²)",
+    "unite": "€/m²",
+    "typeDeValeur": "fixe_par_categorie",
+    "valeursParCategorie": {
+      "R1": 840,
+      "R2": 0,
+      "R3": 0,
+      "R4": 0,
+      "R5": 140
+    },
+    "condition": "",
+    "conseil": "",
+    "document": "",
+    "specifique": "standard",
+    "placeholder": {
+      "R1": "Montant ou surface",
+      "R2": "Montant ou surface",
+      "R3": "Montant ou surface",
+      "R4": "Montant ou surface",
+      "R5": "Montant ou surface"
+    },
+    "image": ""
+  },
+  {
+    "id": "appropriation_de_l'installation_électrique",
+    "slug": "appropriation_de_l'installation_électrique",
+    "titre": "Appropriation de l'installation électrique",
+    "unite": "€",
+    "typeDeValeur": "fixe_par_categorie",
+    "valeursParCategorie": {
+      "R1": 840,
+      "R2": 0,
+      "R3": 0,
+      "R4": 0,
+      "R5": 140
+    },
+    "condition": "",
+    "conseil": "",
+    "document": "",
+    "specifique": "standard",
+    "placeholder": {
+      "R1": "Montant ou surface",
+      "R2": "Montant ou surface",
+      "R3": "Montant ou surface",
+      "R4": "Montant ou surface",
+      "R5": "Montant ou surface"
+    },
+    "image": ""
+  },
+  {
+    "id": "appropriation_de_l'installation_de_gaz",
+    "slug": "appropriation_de_l'installation_de_gaz",
+    "titre": "Appropriation de l'installation de gaz",
+    "unite": "€",
+    "typeDeValeur": "fixe_par_categorie",
+    "valeursParCategorie": {
+      "R1": 840,
+      "R2": 0,
+      "R3": 0,
+      "R4": 0,
+      "R5": 140
+    },
+    "condition": "",
+    "conseil": "",
+    "document": "",
+    "specifique": "standard",
+    "placeholder": {
+      "R1": "Montant ou surface",
+      "R2": "Montant ou surface",
+      "R3": "Montant ou surface",
+      "R4": "Montant ou surface",
+      "R5": "Montant ou surface"
+    },
+    "image": ""
+  },
+  {
+    "id": "pac_eau_chaude",
+    "slug": "pac_eau_chaude",
+    "titre": "Pompe à chaleur – eau chaude sanitaire (boiler thermodynamique)",
+    "unite": "€/installation",
+    "typeDeValeur": "dynamique",
+    "valeursParCategorie": {
+      "R1": 1680,
+      "R2": 1512,
+      "R3": 1176,
+      "R4": 672,
+      "R5": 280
+    },
+    "condition": "Voir conditions techniques spécifiques sur le site officiel.",
+    "conseil": "Faites appel à un professionnel certifié pour la pose et la conformité.",
+    "document": "Facture détaillée + certificat de conformité ou attestation de performance",
+    "specifique": "standard",
+    "placeholder": {
+      "R1": "Quantité ou unité",
+      "R2": "Quantité ou unité",
+      "R3": "Quantité ou unité",
+      "R4": "Quantité ou unité",
+      "R5": "Quantité ou unité"
+    },
+    "image": "images/pac_eau_chaude.webp"
+  },
+  {
+    "id": "pac_chauffage",
+    "slug": "pac_chauffage",
+    "titre": "Pompe à chaleur – chauffage ou combinée air/eau ou air/sol",
+    "unite": "€/installation",
+    "typeDeValeur": "dynamique",
+    "valeursParCategorie": {
+      "R1": 3600,
+      "R2": 3240,
+      "R3": 2520,
+      "R4": 1440,
+      "R5": 600
+    },
+    "condition": "Voir conditions techniques spécifiques sur le site officiel.",
+    "conseil": "Faites appel à un professionnel certifié pour la pose et la conformité.",
+    "document": "Facture détaillée + certificat de conformité ou attestation de performance",
+    "specifique": "standard",
+    "placeholder": {
+      "R1": "Quantité ou unité",
+      "R2": "Quantité ou unité",
+      "R3": "Quantité ou unité",
+      "R4": "Quantité ou unité",
+      "R5": "Quantité ou unité"
+    },
+    "image": "images/pac_chauffage.webp"
+  },
+  {
+    "id": "chaudiere_biomasse",
+    "slug": "chaudiere_biomasse",
+    "titre": "Chaudière biomasse",
+    "unite": "€/installation",
+    "typeDeValeur": "dynamique",
+    "valeursParCategorie": {
+      "R1": 4320,
+      "R2": 3888,
+      "R3": 3024,
+      "R4": 1728,
+      "R5": 720
+    },
+    "condition": "Voir conditions techniques spécifiques sur le site officiel.",
+    "conseil": "Faites appel à un professionnel certifié pour la pose et la conformité.",
+    "document": "Facture détaillée + certificat de conformité ou attestation de performance",
+    "specifique": "standard",
+    "placeholder": {
+      "R1": "Quantité ou unité",
+      "R2": "Quantité ou unité",
+      "R3": "Quantité ou unité",
+      "R4": "Quantité ou unité",
+      "R5": "Quantité ou unité"
+    },
+    "image": "images/chaudiere_biomasse.webp"
+  },
+  {
+    "id": "chauffe_eau_solaire",
+    "slug": "chauffe_eau_solaire",
+    "titre": "Chauffe-eau solaire",
+    "unite": "€/installation",
+    "typeDeValeur": "dynamique",
+    "valeursParCategorie": {
+      "R1": 2520,
+      "R2": 2268,
+      "R3": 1764,
+      "R4": 1008,
+      "R5": 420
+    },
+    "condition": "Voir conditions techniques spécifiques sur le site officiel.",
+    "conseil": "Faites appel à un professionnel certifié pour la pose et la conformité.",
+    "document": "Facture détaillée + certificat de conformité ou attestation de performance",
+    "specifique": "standard",
+    "placeholder": {
+      "R1": "Quantité ou unité",
+      "R2": "Quantité ou unité",
+      "R3": "Quantité ou unité",
+      "R4": "Quantité ou unité",
+      "R5": "Quantité ou unité"
+    },
+    "image": "images/chauffe_eau_solaire.webp"
+  },
+  {
+    "id": "poele_biomasse",
+    "slug": "poele_biomasse",
+    "titre": "Poêle biomasse local",
+    "unite": "€/installation",
+    "typeDeValeur": "dynamique",
+    "valeursParCategorie": {
+      "R1": 960,
+      "R2": 864,
+      "R3": 672,
+      "R4": 384,
+      "R5": 160
+    },
+    "condition": "Voir conditions techniques spécifiques sur le site officiel.",
+    "conseil": "Faites appel à un professionnel certifié pour la pose et la conformité.",
+    "document": "Facture détaillée + certificat de conformité ou attestation de performance",
+    "specifique": "standard",
+    "placeholder": {
+      "R1": "Quantité ou unité",
+      "R2": "Quantité ou unité",
+      "R3": "Quantité ou unité",
+      "R4": "Quantité ou unité",
+      "R5": "Quantité ou unité"
+    },
+    "image": "images/poele_biomasse.webp"
+  },
+  {
+    "id": "vmc_simple",
+    "slug": "vmc_simple",
+    "titre": "Ventilation – VMC simple flux toutes les pièces humides",
+    "unite": "€/logement",
+    "typeDeValeur": "dynamique",
+    "valeursParCategorie": {
+      "R1": 1680,
+      "R2": 1512,
+      "R3": 1176,
+      "R4": 672,
+      "R5": 280
+    },
+    "condition": "Voir conditions techniques spécifiques sur le site officiel.",
+    "conseil": "Faites appel à un professionnel certifié pour la pose et la conformité.",
+    "document": "Facture détaillée + certificat de conformité ou attestation de performance",
+    "specifique": "standard",
+    "placeholder": {
+      "R1": "Quantité ou unité",
+      "R2": "Quantité ou unité",
+      "R3": "Quantité ou unité",
+      "R4": "Quantité ou unité",
+      "R5": "Quantité ou unité"
+    },
+    "image": "images/vmc_simple.webp"
+  },
+  {
+    "id": "vmc_double",
+    "slug": "vmc_double",
+    "titre": "Ventilation – VMC double flux avec récupération de chaleur",
+    "unite": "€/logement",
+    "typeDeValeur": "dynamique",
+    "valeursParCategorie": {
+      "R1": 4080,
+      "R2": 3672,
+      "R3": 2856,
+      "R4": 1632,
+      "R5": 680
+    },
+    "condition": "Voir conditions techniques spécifiques sur le site officiel.",
+    "conseil": "Faites appel à un professionnel certifié pour la pose et la conformité.",
+    "document": "Facture détaillée + certificat de conformité ou attestation de performance",
+    "specifique": "standard",
+    "placeholder": {
+      "R1": "Quantité ou unité",
+      "R2": "Quantité ou unité",
+      "R3": "Quantité ou unité",
+      "R4": "Quantité ou unité",
+      "R5": "Quantité ou unité"
+    },
+    "image": "images/vmc_double.webp"
+  },
+  {
+    "id": "vmc_simple_partielle",
+    "slug": "vmc_simple_partielle",
+    "titre": "Ventilation – VMC simple flux (partielle, pièces humides uniquement)",
+    "unite": "€/logement",
+    "typeDeValeur": "dynamique",
+    "valeursParCategorie": {
+      "R1": 480,
+      "R2": 432,
+      "R3": 336,
+      "R4": 192,
+      "R5": 80
+    },
+    "condition": "Voir conditions techniques spécifiques sur le site officiel.",
+    "conseil": "Faites appel à un professionnel certifié pour la pose et la conformité.",
+    "document": "Facture détaillée + certificat de conformité ou attestation de performance",
+    "specifique": "standard",
+    "placeholder": {
+      "R1": "Quantité ou unité",
+      "R2": "Quantité ou unité",
+      "R3": "Quantité ou unité",
+      "R4": "Quantité ou unité",
+      "R5": "Quantité ou unité"
+    },
+    "image": "images/vmc_simple_partielle.webp"
+  },
+  {
+    "id": "vmc_double_partielle",
+    "slug": "vmc_double_partielle",
+    "titre": "Ventilation – VMC double flux (partielle, pièces humides uniquement)",
+    "unite": "€/logement",
+    "typeDeValeur": "dynamique",
+    "valeursParCategorie": {
+      "R1": 960,
+      "R2": 864,
+      "R3": 672,
+      "R4": 384,
+      "R5": 160
+    },
+    "condition": "Voir conditions techniques spécifiques sur le site officiel.",
+    "conseil": "Faites appel à un professionnel certifié pour la pose et la conformité.",
+    "document": "Facture détaillée + certificat de conformité ou attestation de performance",
+    "specifique": "standard",
+    "placeholder": {
+      "R1": "Quantité ou unité",
+      "R2": "Quantité ou unité",
+      "R3": "Quantité ou unité",
+      "R4": "Quantité ou unité",
+      "R5": "Quantité ou unité"
+    },
+    "image": "images/vmc_double_partielle.webp"
+  },
+  {
+    "id": "chauffage_isol_conduites",
+    "slug": "chauffage_isol_conduites",
+    "titre": "Amélioration chauffage – Isolation des conduites de chauffage (hors volume protégé)",
+    "unite": "€/logement",
+    "typeDeValeur": "dynamique",
+    "valeursParCategorie": {
+      "R1": 204,
+      "R2": 184,
+      "R3": 143,
+      "R4": 82,
+      "R5": 34
+    },
+    "condition": "Voir conditions techniques spécifiques sur le site officiel.",
+    "conseil": "Faites appel à un professionnel certifié pour la pose et la conformité.",
+    "document": "Facture détaillée + certificat de conformité ou attestation de performance",
+    "specifique": "standard",
+    "placeholder": {
+      "R1": "Quantité ou unité",
+      "R2": "Quantité ou unité",
+      "R3": "Quantité ou unité",
+      "R4": "Quantité ou unité",
+      "R5": "Quantité ou unité"
+    },
+    "image": "images/chauffage_isol_conduites.webp"
+  },
+  {
+    "id": "chauffage_isol_ballon_500",
+    "slug": "chauffage_isol_ballon_500",
+    "titre": "Amélioration chauffage – Isolation ballon ≤500l",
+    "unite": "€/ballon",
+    "typeDeValeur": "dynamique",
+    "valeursParCategorie": {
+      "R1": 120,
+      "R2": 108,
+      "R3": 84,
+      "R4": 48,
+      "R5": 20
+    },
+    "condition": "Voir conditions techniques spécifiques sur le site officiel.",
+    "conseil": "Faites appel à un professionnel certifié pour la pose et la conformité.",
+    "document": "Facture détaillée + certificat de conformité ou attestation de performance",
+    "specifique": "standard",
+    "placeholder": {
+      "R1": "Quantité ou unité",
+      "R2": "Quantité ou unité",
+      "R3": "Quantité ou unité",
+      "R4": "Quantité ou unité",
+      "R5": "Quantité ou unité"
+    },
+    "image": "images/chauffage_isol_ballon_500.webp"
+  },
+  {
+    "id": "chauffage_isol_ballon_sup",
+    "slug": "chauffage_isol_ballon_sup",
+    "titre": "Amélioration chauffage – Isolation ballon >500l",
+    "unite": "€/ballon",
+    "typeDeValeur": "dynamique",
+    "valeursParCategorie": {
+      "R1": 204,
+      "R2": 184,
+      "R3": 143,
+      "R4": 82,
+      "R5": 34
+    },
+    "condition": "Voir conditions techniques spécifiques sur le site officiel.",
+    "conseil": "Faites appel à un professionnel certifié pour la pose et la conformité.",
+    "document": "Facture détaillée + certificat de conformité ou attestation de performance",
+    "specifique": "standard",
+    "placeholder": {
+      "R1": "Quantité ou unité",
+      "R2": "Quantité ou unité",
+      "R3": "Quantité ou unité",
+      "R4": "Quantité ou unité",
+      "R5": "Quantité ou unité"
+    },
+    "image": "images/chauffage_isol_ballon_sup.webp"
+  },
+  {
+    "id": "chauffage_circ_3logt",
+    "slug": "chauffage_circ_3logt",
+    "titre": "Amélioration chauffage – Circulateur (max 3 logements)",
+    "unite": "€/circulateur",
+    "typeDeValeur": "dynamique",
+    "valeursParCategorie": {
+      "R1": 84,
+      "R2": 76,
+      "R3": 59,
+      "R4": 34,
+      "R5": 14
+    },
+    "condition": "Voir conditions techniques spécifiques sur le site officiel.",
+    "conseil": "Faites appel à un professionnel certifié pour la pose et la conformité.",
+    "document": "Facture détaillée + certificat de conformité ou attestation de performance",
+    "specifique": "standard",
+    "placeholder": {
+      "R1": "Quantité ou unité",
+      "R2": "Quantité ou unité",
+      "R3": "Quantité ou unité",
+      "R4": "Quantité ou unité",
+      "R5": "Quantité ou unité"
+    },
+    "image": "images/chauffage_circ_3logt.webp"
+  },
+  {
+    "id": "chauffage_circ_4logt",
+    "slug": "chauffage_circ_4logt",
+    "titre": "Amélioration chauffage – Circulateur (min 4 logements)",
+    "unite": "€/circulateur",
+    "typeDeValeur": "dynamique",
+    "valeursParCategorie": {
+      "R1": 456,
+      "R2": 410,
+      "R3": 319,
+      "R4": 182,
+      "R5": 76
+    },
+    "condition": "Voir conditions techniques spécifiques sur le site officiel.",
+    "conseil": "Faites appel à un professionnel certifié pour la pose et la conformité.",
+    "document": "Facture détaillée + certificat de conformité ou attestation de performance",
+    "specifique": "standard",
+    "placeholder": {
+      "R1": "Quantité ou unité",
+      "R2": "Quantité ou unité",
+      "R3": "Quantité ou unité",
+      "R4": "Quantité ou unité",
+      "R5": "Quantité ou unité"
+    },
+    "image": "images/chauffage_circ_4logt.webp"
+  },
+  {
+    "id": "chauffage_ballon_500",
+    "slug": "chauffage_ballon_500",
+    "titre": "Amélioration chauffage – Remplacement ballon ≤500l",
+    "unite": "€/ballon",
+    "typeDeValeur": "dynamique",
+    "valeursParCategorie": {
+      "R1": 600,
+      "R2": 540,
+      "R3": 420,
+      "R4": 240,
+      "R5": 40
+    },
+    "condition": "Voir conditions techniques spécifiques sur le site officiel.",
+    "conseil": "Faites appel à un professionnel certifié pour la pose et la conformité.",
+    "document": "Facture détaillée + certificat de conformité ou attestation de performance",
+    "specifique": "standard",
+    "placeholder": {
+      "R1": "Quantité ou unité",
+      "R2": "Quantité ou unité",
+      "R3": "Quantité ou unité",
+      "R4": "Quantité ou unité",
+      "R5": "Quantité ou unité"
+    },
+    "image": "images/chauffage_ballon_500.webp"
+  },
+  {
+    "id": "chauffage_ballon_sup",
+    "slug": "chauffage_ballon_sup",
+    "titre": "Amélioration chauffage – Remplacement ballon >500l",
+    "unite": "€/ballon",
+    "typeDeValeur": "dynamique",
+    "valeursParCategorie": {
+      "R1": 408,
+      "R2": 367,
+      "R3": 286,
+      "R4": 163,
+      "R5": 68
+    },
+    "condition": "Voir conditions techniques spécifiques sur le site officiel.",
+    "conseil": "Faites appel à un professionnel certifié pour la pose et la conformité.",
+    "document": "Facture détaillée + certificat de conformité ou attestation de performance",
+    "specifique": "standard",
+    "placeholder": {
+      "R1": "Quantité ou unité",
+      "R2": "Quantité ou unité",
+      "R3": "Quantité ou unité",
+      "R4": "Quantité ou unité",
+      "R5": "Quantité ou unité"
+    },
+    "image": "images/chauffage_ballon_sup.webp"
+  },
+  {
+    "id": "chauffage_vannes",
+    "slug": "chauffage_vannes",
+    "titre": "Amélioration chauffage – 5 vannes thermostatiques",
+    "unite": "€/5 vannes",
+    "typeDeValeur": "dynamique",
+    "valeursParCategorie": {
+      "R1": 120,
+      "R2": 108,
+      "R3": 84,
+      "R4": 48,
+      "R5": 20
+    },
+    "condition": "Voir conditions techniques spécifiques sur le site officiel.",
+    "conseil": "Faites appel à un professionnel certifié pour la pose et la conformité.",
+    "document": "Facture détaillée + certificat de conformité ou attestation de performance",
+    "specifique": "standard",
+    "placeholder": {
+      "R1": "Quantité ou unité",
+      "R2": "Quantité ou unité",
+      "R3": "Quantité ou unité",
+      "R4": "Quantité ou unité",
+      "R5": "Quantité ou unité"
+    },
+    "image": "images/chauffage_vannes.webp"
+  },
+  {
+    "id": "chauffage_thermostat",
+    "slug": "chauffage_thermostat",
+    "titre": "Amélioration chauffage – Thermostat d’ambiance",
+    "unite": "€/installation",
+    "typeDeValeur": "dynamique",
+    "valeursParCategorie": {
+      "R1": 96,
+      "R2": 86,
+      "R3": 67,
+      "R4": 38,
+      "R5": 16
+    },
+    "condition": "Voir conditions techniques spécifiques sur le site officiel.",
+    "conseil": "Faites appel à un professionnel certifié pour la pose et la conformité.",
+    "document": "Facture détaillée + certificat de conformité ou attestation de performance",
+    "specifique": "standard",
+    "placeholder": {
+      "R1": "Quantité ou unité",
+      "R2": "Quantité ou unité",
+      "R3": "Quantité ou unité",
+      "R4": "Quantité ou unité",
+      "R5": "Quantité ou unité"
+    },
+    "image": "images/chauffage_thermostat.webp"
+  },
+  {
+    "id": "ecs_ballon_500",
+    "slug": "ecs_ballon_500",
+    "titre": "ECS – Remplacement ballon ≤500l",
+    "unite": "€/ballon",
+    "typeDeValeur": "dynamique",
+    "valeursParCategorie": {
+      "R1": 288,
+      "R2": 259,
+      "R3": 202,
+      "R4": 115,
+      "R5": 48
+    },
+    "condition": "Voir conditions techniques spécifiques sur le site officiel.",
+    "conseil": "Faites appel à un professionnel certifié pour la pose et la conformité.",
+    "document": "Facture détaillée + certificat de conformité ou attestation de performance",
+    "specifique": "standard",
+    "placeholder": {
+      "R1": "Quantité ou unité",
+      "R2": "Quantité ou unité",
+      "R3": "Quantité ou unité",
+      "R4": "Quantité ou unité",
+      "R5": "Quantité ou unité"
+    },
+    "image": "images/ecs_ballon_500.webp"
+  },
+  {
+    "id": "ecs_ballon_sup",
+    "slug": "ecs_ballon_sup",
+    "titre": "ECS – Remplacement ballon >500l",
+    "unite": "€/ballon",
+    "typeDeValeur": "dynamique",
+    "valeursParCategorie": {
+      "R1": 432,
+      "R2": 389,
+      "R3": 302,
+      "R4": 173,
+      "R5": 72
+    },
+    "condition": "Voir conditions techniques spécifiques sur le site officiel.",
+    "conseil": "Faites appel à un professionnel certifié pour la pose et la conformité.",
+    "document": "Facture détaillée + certificat de conformité ou attestation de performance",
+    "specifique": "standard",
+    "placeholder": {
+      "R1": "Quantité ou unité",
+      "R2": "Quantité ou unité",
+      "R3": "Quantité ou unité",
+      "R4": "Quantité ou unité",
+      "R5": "Quantité ou unité"
+    },
+    "image": "images/ecs_ballon_sup.webp"
+  },
+  {
+    "id": "ecs_conduites_coll",
+    "slug": "ecs_conduites_coll",
+    "titre": "ECS – Isolation conduites boucle circulation (collective)",
+    "unite": "€/logement",
+    "typeDeValeur": "dynamique",
+    "valeursParCategorie": {
+      "R1": 120,
+      "R2": 108,
+      "R3": 84,
+      "R4": 48,
+      "R5": 20
+    },
+    "condition": "Voir conditions techniques spécifiques sur le site officiel.",
+    "conseil": "Faites appel à un professionnel certifié pour la pose et la conformité.",
+    "document": "Facture détaillée + certificat de conformité ou attestation de performance",
+    "specifique": "standard",
+    "placeholder": {
+      "R1": "Quantité ou unité",
+      "R2": "Quantité ou unité",
+      "R3": "Quantité ou unité",
+      "R4": "Quantité ou unité",
+      "R5": "Quantité ou unité"
+    },
+    "image": "images/ecs_conduites_coll.webp"
+  },
+  {
+    "id": "ecs_echangeur",
+    "slug": "ecs_echangeur",
+    "titre": "ECS – Isolation échangeur plaques externe",
+    "unite": "€/échangeur",
+    "typeDeValeur": "dynamique",
+    "valeursParCategorie": {
+      "R1": 204,
+      "R2": 184,
+      "R3": 143,
+      "R4": 82,
+      "R5": 34
+    },
+    "condition": "Voir conditions techniques spécifiques sur le site officiel.",
+    "conseil": "Faites appel à un professionnel certifié pour la pose et la conformité.",
+    "document": "Facture détaillée + certificat de conformité ou attestation de performance",
+    "specifique": "standard",
+    "placeholder": {
+      "R1": "Quantité ou unité",
+      "R2": "Quantité ou unité",
+      "R3": "Quantité ou unité",
+      "R4": "Quantité ou unité",
+      "R5": "Quantité ou unité"
+    },
+    "image": "images/ecs_echangeur.webp"
+  },
+  {
+    "id": "ecs_isol_ballon_500",
+    "slug": "ecs_isol_ballon_500",
+    "titre": "ECS – Isolation ballon ≤500l",
+    "unite": "€/ballon",
+    "typeDeValeur": "dynamique",
+    "valeursParCategorie": {
+      "R1": 120,
+      "R2": 108,
+      "R3": 84,
+      "R4": 48,
+      "R5": 20
+    },
+    "condition": "Voir conditions techniques spécifiques sur le site officiel.",
+    "conseil": "Faites appel à un professionnel certifié pour la pose et la conformité.",
+    "document": "Facture détaillée + certificat de conformité ou attestation de performance",
+    "specifique": "standard",
+    "placeholder": {
+      "R1": "Quantité ou unité",
+      "R2": "Quantité ou unité",
+      "R3": "Quantité ou unité",
+      "R4": "Quantité ou unité",
+      "R5": "Quantité ou unité"
+    },
+    "image": "images/ecs_isol_ballon_500.webp"
+  },
+  {
+    "id": "ecs_isol_ballon_sup",
+    "slug": "ecs_isol_ballon_sup",
+    "titre": "ECS – Isolation ballon >500l",
+    "unite": "€/ballon",
+    "typeDeValeur": "dynamique",
+    "valeursParCategorie": {
+      "R1": 120,
+      "R2": 108,
+      "R3": 84,
+      "R4": 48,
+      "R5": 34
+    },
+    "condition": "Voir conditions techniques spécifiques sur le site officiel.",
+    "conseil": "Faites appel à un professionnel certifié pour la pose et la conformité.",
+    "document": "Facture détaillée + certificat de conformité ou attestation de performance",
+    "specifique": "standard",
+    "placeholder": {
+      "R1": "Quantité ou unité",
+      "R2": "Quantité ou unité",
+      "R3": "Quantité ou unité",
+      "R4": "Quantité ou unité",
+      "R5": "Quantité ou unité"
+    },
+    "image": "images/ecs_isol_ballon_sup.webp"
+  }
 ]
