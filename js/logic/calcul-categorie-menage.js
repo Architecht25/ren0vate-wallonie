@@ -68,3 +68,11 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log("🔁 Catégorie restaurée depuis le localStorage :", categorie);
   }
 });
+
+export function getCategorieId() {
+  const saved = localStorage.getItem("categorie_menage");
+  const cat = saved ? JSON.parse(saved) : null;
+  return cat?.id || null;
+}
+
+export { afficherCategorie };

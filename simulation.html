@@ -13,6 +13,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
 
+
   <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
   <script type="importmap">
   {
@@ -162,8 +163,16 @@
     <div id="prime-cards-container" class="row gx-3 gy-4 mt-4">
     </div>
 
-    <script type="module" src="js/logic/calcul-categorie-menage.js"></script>
-    <script type="module" src="js/cartes/cartes-primes.js"></script>
+  <!-- Calcul de catégorie -->
+  <script type="module" src="js/logic/calcul-categorie-menage.js"></script>
 
+  <!-- Logique de calcul -->
+  <script type="module" src="js/logic/total-primes.js"></script>
+
+  <!-- Cartes de primes -->
+  <script type="module" src="js/ui/cartes-wallonie.js"></script>
+
+  <!-- Script principal -->
+  <script type="module" src="js/main.js"></script>
 </body>
 </html>

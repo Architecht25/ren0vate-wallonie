@@ -1,27 +1,18 @@
-// 🔹 Fonction qui additionne tous les montants affichés dans les cartes de primes
+// 🔹 Additionne tous les montants visibles dans les cartes de primes
 export function calculerTotalToutesCartes() {
-  let total = 0; // Initialise le total à 0
+  let total = 0;
 
-  // 🔍 Récupère tous les éléments HTML contenant un montant estimé de prime
+  // 🔍 Sélectionne tous les éléments qui contiennent les résultats de prime
   const resultats = document.querySelectorAll(".prime-result");
 
-  // 🔁 Parcourt chaque élément pour extraire et additionner la valeur numérique
   resultats.forEach(span => {
-    // 🔧 Nettoie le texte : retire le symbole € et les espaces
-    const texte = span.textContent.replace("€", "").trim();
-
-    // 💶 Convertit en nombre (0 par défaut si invalide ou vide)
+    if (span.closest(".prime-card")?.classList.contains("inactive")) return; // ⛔ Ignorer les cartes désactivées
+    const texte = span.textContent.replace("€", "").replace(",", ".").trim();
     const montant = parseFloat(texte) || 0;
-
-    // ➕ Ajoute le montant au total
     total += montant;
   });
 
-  // 🎯 Sélectionne l’élément dans lequel afficher le total global
+  // 🎯 Affiche le total dans l’élément HTML prévu
   const totalElt = document.getElementById("total-primes-affiche");
-
-  // 🖊️ Si l'élément existe, on affiche le total formaté à deux décimales
-  if (totalElt) {
-    totalElt.textContent = `${total.toFixed(2)} €`;
-  }
+  if (totalElt) totalElt.textContent = `${total.toFixed(2)} €`;
 }
