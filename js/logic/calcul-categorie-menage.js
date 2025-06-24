@@ -1,4 +1,7 @@
-import { categories } from './data/categories-wallonie.js'; // ou ton chemin réel
+import { categories } from '../../data/categories-wallonie.js';
+
+console.log("✅ JS chargé");
+console.log("📊 Catégories importées :", categories);
 
 function calculerCategorieWallonie() {
   // Récupérer les valeurs du DOM
@@ -56,4 +59,12 @@ function traiterCategorie() {
 }
 
 window.traiterCategorie = traiterCategorie;
-
+// 🧠 Affichage automatique si une catégorie est déjà stockée
+document.addEventListener("DOMContentLoaded", () => {
+  const saved = localStorage.getItem("categorie_menage");
+  if (saved) {
+    const categorie = JSON.parse(saved);
+    afficherCategorie(categorie);
+    console.log("🔁 Catégorie restaurée depuis le localStorage :", categorie);
+  }
+});
