@@ -27,318 +27,107 @@
   <!-- dépôt ici des codes pour introduction des demandes de primes -->
   <h1 class="mb-4 text-center w-100">Préavisualisation votre demande via votre formulaire Miroir et introduisez ensuite votre demande</h1>
 
-  <!-- Étape 0 : Condition préalable -->
-  <section id="section-condition" class="formulaire-prime mt-5">
-    <h3>0. Conditions préalables</h3>
-    <p>Le dépôt de votre demande ne peut se faire que si vous êtes domicilié dans votre bien après travaux</p>
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" id="domicile" name="domicile" value="domicile" required>
-      <label class="form-check-label" for="domicile">Etes-vous bien domicilié dans votre bien?</label>
-    </div>
+  <!-- SECTION 1 : Demande d'audit énergétique -->
+<div class="container my-4" style="max-width: 800px;">
+  <section id="audit" class="formulaire-prime mt-5">
+  <h2>Demande d'audit énergétique</h2>
+
+  <label for="demandeur">Type de demandeur</label>
+  <select id="demandeur" name="demandeur" class="form-select">
+    <option value="">-- Choisissez --</option>
+    <option value="occupant">Propriétaire occupant</option>
+    <option value="bailleur">Propriétaire bailleur</option>
+  </select>
+
+  <label for="type-logement">Type de logement</label>
+  <select id="type-logement" name="type-logement" class="form-select">
+    <option value="maison">Maison unifamiliale</option>
+    <option value="appartement">Appartement</option>
+  </select>
+
+  <label for="adresse">Adresse du logement</label>
+  <input type="text" id="adresse" name="adresse" class="form-control">
+
+  <label for="annee-construction">Année de construction</label>
+  <input type="number" id="annee-construction" name="annee-construction" class="form-control">
+
+  <label for="situation-logement">Situation du logement</label>
+  <select id="situation-logement" name="situation-logement" class="form-select">
+    <option value="principale">Résidence principale</option>
+    <option value="location">Mis en location</option>
+  </select>
+
+  <label for="revenu">Revenu annuel total du ménage</label>
+  <input type="number" id="revenu" name="revenu" class="form-control">
+
+  <label for="personnes-charge">Nombre de personnes à charge</label>
+  <input type="number" id="personnes-charge" name="personnes-charge" class="form-control">
+
+  <label for="preuve-propriete">Preuve de propriété</label>
+  <input type="file" id="preuve-propriete" name="preuve-propriete" class="form-control">
+
+  <label>
+    <input type="checkbox" name="consentement-audit">
+    J'accepte qu'un audit soit réalisé par un auditeur agréé.
+  </label>
   </section>
 
-  <!-- Étape 1 & 2: Profil du demandeur + Données du logement -->
-  <section id="section-profil" class="formulaire-prime mt-5">
-    <h3>1. Profil du demandeur</h3>
+  <!-- SECTION 2 : Demande de prime à la rénovation -->
+  <section id="prime"  class="formulaire-prime mt-5">
+    <h2>Demande de prime à la rénovation</h2>
 
-    <label for="type-demandeur">Type de demandeur *</label>
-    <select id="type-demandeur" name="type_demandeur" required>
-      <option disabled selected value="">-- Sélectionnez --</option>
-      <option value="particulier">Particulier</option>
-      <option value="societe">Société</option>
-      <option value="syndic">Syndicat de copropriété</option>
-      <option value="bailleur_social">Bailleur social</option>
-      <option value="asbl_cooperative">ASBL ou Coopérative</option>
+    <!-- Sous-section A : Données générales -->
+    <h3>Données générales</h3>
+    <label for="rapport-audit">Numéro de rapport d'audit</label>
+    <input type="text" id="rapport-audit" name="rapport-audit" class="form-control">
+
+    <label for="date-rapport">Date du rapport</label>
+    <input type="date" id="date-rapport" name="date-rapport" class="form-control">
+
+    <label for="bce-auditeur">Numéro BCE de l'auditeur</label>
+    <input type="text" id="bce-auditeur" name="bce-auditeur" class="form-control">
+
+    <label for="ean">Code EAN du bâtiment</label>
+    <input type="text" id="ean" name="ean" class="form-control">
+
+    <label for="choix-travaux">Choix des travaux à réaliser</label>
+    <select id="choix-travaux" name="choix-travaux" class="form-select">
+      <option value="toiture">Toiture</option>
+      <option value="murs">Murs</option>
+      <option value="sol">Sol</option>
+      <option value="menuiseries">Menuiseries</option>
     </select>
 
-    <label for="nom">Nom du demandeur *</label>
-    <input type="text" id="nom" name="nom" required />
+    <!-- Sous-section B : Exemple de travaux toiture -->
+    <h3>Détails des travaux : Toiture</h3>
+    <label for="surface-toiture">Surface isolée (m²)</label>
+    <input type="number" id="surface-toiture" name="surface-toiture" class="form-control">
 
-    <label for="prenom">Prénom du demandeur *</label>
-    <input type="text" id="prenom" name="prenom" required />
+    <label for="type-isolation">Type de matériau</label>
+    <input type="text" id="type-isolation" name="type-isolation" class="form-control">
 
-    <label for="registre-national">Numéro de registre national ou BCE *</label>
-    <input type="text" id="registre-national" name="registre_national" required />
+    <label for="valeur-r">Valeur R (m²K/W)</label>
+    <input type="number" step="0.1" id="valeur-r" name="valeur-r" class="form-control">
 
-    <label for="telephone">Téléphone *</label>
-    <input type="tel" id="telephone" name="telephone" required />
+    <label for="facture">Facture ou devis</label>
+    <input type="file" id="facture" name="facture" class="form-control">
 
-    <label for="email">Adresse email *</label>
-    <input type="email" id="email" name="email" required />
-  </section>
-
-  <!-- Étape 2 : Données du logement concerné -->
-  <section id="section-logement" class="formulaire-prime mt-5">
-    <h3 class="mt-4">2. Données du logement concerné</h3>
-
-    <label for="adresse">Votre code EAN*</label>
-    <input type="text" id="ean" name="ean" placeholder="Ex: 54144..." />
-
-    <label for="adresse">Adresse du logement *</label>
-    <input type="text" id="adresse" name="adresse" required />
-
-    <label for="code-postal">Code postal *</label>
-    <input type="text" id="code-postal" name="code_postal" required />
-
-    <label for="commune">Commune *</label>
-    <input type="text" id="commune" name="commune" required />
-
-    <label for="type-bien">Type de bien *</label>
-    <select id="type-bien" name="type_bien" required>
-      <option disabled selected value="">-- Sélectionnez --</option>
-      <option value="maison">Maison unifamiliale</option>
-      <option value="appartement">Appartement</option>
-      <option value="immeuble">Immeuble avec plusieurs unités</option>
-    </select>
-
-    <label for="usage">Usage du bien *</label>
-    <select id="usage" name="usage" required>
-      <option disabled selected value="">-- Sélectionnez --</option>
-      <option value="residence_principale">Résidence principale</option>
-      <option value="location">Bien en location</option>
-      <option value="autre">Autre</option>
-    </select>
-
-    <label for="parcelle">Numéro de parcelle (optionnel)</label>
-    <input type="text" id="parcelle" name="parcelle" />
-  </section>
-
-  <!-- Étape 2.1 : Informations complémentaires -->
-  <section id="section-infos-complementaires" class="formulaire-prime mt-5">
-    <h3 class="mt-4">2.1 Informations complémentaires sur le système de chauffage</h3>
-    <label for="chauffage-post-renovation">Système de chauffage après rénovation *</label>
-      <select id="chauffage-post-renovation" name="chauffage_post_renovation" required>
-        <option disabled selected value="">-- Sélectionnez --</option>
-        <option value="gaz">Chauffage central au gaz (condensation)</option>
-        <option value="mazout">Chauffage au mazout</option>
-        <option value="electrique">Chauffage électrique direct</option>
-        <option value="pac-air-eau">Pompe à chaleur air/eau</option>
-        <option value="pac-geothermique">Pompe à chaleur géothermique</option>
-        <option value="reseau-chaleur">Réseau de chaleur</option>
-        <option value="bois">Poêle / insert bois / biomasse</option>
-        <option value="autre">Autre (à spécifier)</option>
-        <option value="ne_sais_pas">Je ne sais pas</option>
-      </select>
-  </section>
-
-  <!-- Étape 3 : Travaux à déclarer -->
-  <section id="travaux-section" class="formulaire-prime mt-5">
-    <h3>3. Travaux à déclarer</h3>
-    <p>Veuillez cocher les types de travaux envisagés et compléter les champs demandés pour chaque type sélectionné.</p>
-
-    <!-- Isolation toiture -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" id="travaux-toiture" name="travaux[]" value="toiture">
-      <label class="form-check-label" for="travaux-toiture">Isolation de la toiture</label>
-    </div>
-    <div id="details-toiture" class="travaux-details d-none">
-      <label for="surface-toiture">Surface (m²)</label>
-      <input type="number" id="surface-toiture" name="surface_toiture" min="0" step="1">
-      <label for="type-toiture">Méthode</label>
-      <select id="type-toiture" name="type_toiture">
-        <option value="">-- Sélectionnez --</option>
-        <option value="interieur">Par l’intérieur</option>
-        <option value="exterieur">Par l’extérieur</option>
-      </select>
-    </div>
-
-    <!-- Isolation murs extérieurs -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" id="travaux-murs" name="travaux[]" value="murs">
-      <label class="form-check-label" for="travaux-murs">Isolation des murs extérieurs</label>
-    </div>
-    <div id="details-murs" class="travaux-details d-none">
-      <label for="surface-murs">Surface (m²)</label>
-      <input type="number" id="surface-murs" name="surface_murs" min="0" step="1">
-      <label for="type-murs">Méthode</label>
-      <select id="type-murs" name="type_murs">
-        <option value="">-- Sélectionnez --</option>
-        <option value="creux">Murs creux</option>
-        <option value="interieur">Par l’intérieur</option>
-        <option value="exterieur">Par l’extérieur</option>
-      </select>
-    </div>
-
-    <!-- Vitrage -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" id="travaux-vitrage" name="travaux[]" value="vitrage">
-      <label class="form-check-label" for="travaux-vitrage">Remplacement du vitrage</label>
-    </div>
-    <div id="details-vitrage" class="travaux-details d-none">
-      <label for="surface-vitrage">Surface (m²)</label>
-      <input type="number" id="surface-vitrage" name="surface_vitrage" min="0" step="1">
-    </div>
-
-    <!-- Isolation du sol -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" id="travaux-sol" name="travaux[]" value="sol">
-      <label class="form-check-label" for="travaux-sol">Isolation du sol ou des caves</label>
-    </div>
-    <div id="details-sol" class="travaux-details d-none">
-      <label for="surface-sol">Surface (m²)</label>
-      <input type="number" id="surface-sol" name="surface_sol" min="0" step="1">
-    </div>
-
-    <!-- Chauffage (chaudière ou PAC) -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" id="travaux-chauffage" name="travaux[]" value="chauffage">
-      <label class="form-check-label" for="travaux-chauffage">Installation d'une pompe à clhaleur et chauffe-eau thermodynamique</label>
-    </div>
-    <div id="details-chauffage" class="travaux-details d-none">
-      <label for="type-chauffage">Type de système</label>
-      <select id="type-chauffage" name="type_chauffage">
-        <option value="">-- Sélectionnez --</option>
-        <option value="pac-geothermique">Pompe à chaleur géothermique</option>
-        <option value="pac-air-eau">Pompe à chaleur air/eau</option>
-        <option value="pac-air-air">Pompe à chaleur air/air</option>
-        <option value="hybride">Pompe à chaleur hybride</option>
-        <option value="boiler">Boiler thermodynamique</option>
-      </select>
-    </div>
-
-  </section>
-
-  <!-- Étape 3.1 – Travaux complémentaires et non subventionnés -->
-  <section id="travaux-complementaires" class="formulaire-prime mt-5">
-    <h4 class="mb-4">🔧 Travaux complémentaires (préparatoires ou non subventionnés)</h4>
-
-    <!-- Travaux préparatoires -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" id="travaux-preparatoires" name="travaux[]" value="preparatoires">
-      <label class="form-check-label fw-bold" for="travaux-preparatoires">
-        Travaux préparatoires à l’isolation
-      </label>
-    </div>
-    <div id="details-preparatoires" class="travaux-details d-none ms-3">
-      <label for="type-preparatoires">Type de préparatifs</label>
-      <input type="text" id="type-preparatoires" name="type_preparatoires" placeholder="Ex : retrait du plafonnage" class="form-control mb-2">
-      <label for="montant-preparatoires">Montant total facturé (€)</label>
-      <input type="number" id="montant-preparatoires" name="montant_preparatoires" min="0" step="10" class="form-control">
-    </div>
-
-    <!-- Travaux d’électricité -->
-    <div class="form-check mt-4">
-      <input class="form-check-input" type="checkbox" id="travaux-electricite" name="travaux[]" value="electricite">
-      <label class="form-check-label fw-bold" for="travaux-electricite">
-        Travaux préparatoire sanitaires et électricité
-      </label>
-    </div>
-    <div id="details-electricite" class="travaux-details d-none ms-3">
-      <label for="type-electricite">Nature des travaux</label>
-      <input type="text" id="type-electricite" name="type_electricite" placeholder="Ex : Mise en conformité RGIE, tableau électrique…" class="form-control mb-2">
-      <label for="montant-electricite">Montant estimé ou facturé (€)</label>
-      <input type="number" id="montant-electricite" name="montant_electricite" min="0" step="10" class="form-control">
-    </div>
-  </section>
-
-  <!-- Étape 4 : Revenus et catégorie de prime -->
-  <section id="section-revenus" class="formulaire-prime mt-5">
-    <h3>4. Revenus et composition du ménage</h3>
-
-    <!-- Revenus imposables du ménage -->
-    <label for="revenus-annuels">Revenus annuels imposables (ménage complet) *</label>
-    <input type="number" id="revenus-annuels" name="revenus_annuels" min="0" step="100" placeholder="Ex : 42 000" required>
-
-    <!-- Année de l'AER -->
-    <label for="annee-aer">Année de l’avertissement extrait de rôle utilisé *</label>
-    <select id="annee-aer" name="annee_aer" required>
-      <option disabled selected value="">-- Sélectionnez une année --</option>
-      <option value="2023">2023 (revenus 2022)</option>
-      <option value="2022">2022 (revenus 2021)</option>
-      <option value="2021">2021 (revenus 2020)</option>
-    </select>
-
-    <!-- Composition du ménage -->
-    <label for="nombre-personnes-charge">Nombre de personnes à charge *</label>
-    <input type="number" id="nombre-personnes-charge" name="personnes_charge" min="0" max="10" value="0" required>
-  </section>
-
-  <!-- Étape 5 : Documents à fournir -->
-  <section id="section-documents" class="formulaire-prime mt-5">
-  <h3>5. Documents justificatifs</h3>
-
-  <p class="mb-3">Joignez les documents nécessaires à l’analyse de votre demande. Les formats acceptés sont PDF, JPG ou PNG.</p>
-
-  <!-- Devis -->
-  <label for="upload-factures">📎 Devis des travaux *</label>
-  <input type="file" id="upload-devis" name="document_devis" accept=".pdf,.jpg,.jpeg,.png" multiple required>
-
-  <!-- Factures -->
-  <label for="upload-factures">📎 Factures des travaux *</label>
-  <input type="file" id="upload-factures" name="document_factures" accept=".pdf,.jpg,.jpeg,.png" multiple required>
-
-  <!-- Etats d'avancement -->
-  <label for="upload-avancement">📊 Etats d'avancement (si disponible)</label>
-  <input type="file" id="upload-avancement" name="document_avancement" accept=".pdf,.jpg,.jpeg,.png">
-
-  <!-- Attestations entrepreneur -->
-  <label for="upload-attestations">🧑‍🔧 Attestations des entrepreneurs</label>
-  <input type="file" id="upload-attestations" name="document_attestations" accept=".pdf,.jpg,.jpeg,.png" multiple>
-
-  <!-- PEB -->
-  <label for="upload-peb">📊 Certificat PEB (si disponible)</label>
-  <input type="file" id="upload-peb" name="document_peb" accept=".pdf,.jpg,.jpeg,.png">
-
-  <!-- photo -->
-  <label for="upload-photo">📊 Photos</label>
-  <input type="file" id="upload-photo" name="document_photo" accept=".pdf,.jpg,.jpeg,.png">
-
-  <!-- label -->
-  <label for="upload-label">📊 label européen</label>
-  <input type="file" id="upload-label" name="document_label" accept=".pdf,.jpg,.jpeg,.png">
-
-  <!-- conformité -->
-  <label for="upload-conformité">📊 Attestations de conformité</label>
-  <input type="file" id="upload-conformité" name="document_conformité" accept=".pdf,.jpg,.jpeg,.png">
-
-  <!-- plans -->
-  <label for="upload-plans">📊 Plans</label>
-  <input type="file" id="upload-plans" name="document_plans" accept=".pdf,.jpg,.jpeg,.png">
-
-  <!-- permis -->
-  <label for="upload-permis">📊 Permis</label>
-  <input type="file" id="upload-permis" name="document_permis" accept=".pdf,.jpg,.jpeg,.png">
-
-  <!-- Autres documents -->
-  <label for="upload-autres">📂 Autres documents utiles</label>
-  <input type="file" id="upload-autres" name="document_autres" accept=".pdf,.jpg,.jpeg,.png" multiple>
-
-  </section>
-
-  <!-- Étape 6 : Soumission du formulaire -->
-  <section id="section-soumission" class="formulaire-prime mt-5">
-  <h3>6. Soumission de la demande</h3>
-
-  <!-- Récapitulatif -->
-  <p class="mb-3">
-    Vous êtes sur le point de soumettre votre demande de primes. Veuillez vérifier que toutes les informations sont correctes et que les documents justificatifs ont bien été joints.
-  </p>
-
-  <!-- Confirmation utilisateur -->
-  <div class="form-check my-3">
-    <input class="form-check-input" type="checkbox" id="confirmation-veracite" name="confirmation_veracite" required>
-    <label class="form-check-label fw-bold" for="confirmation-veracite">
-      Je confirme que les informations fournies sont exactes et complètes à ma connaissance.
+    <!-- Sous-section C : Déclaration finale -->
+    <h3>Déclaration finale</h3>
+    <label>
+      <input type="checkbox" name="honorabilite">
+      Je déclare sur l'honneur l'exactitude des informations transmises.
     </label>
-  </div>
 
-  <!-- Email de contact -->
-  <label for="email-contact">📧 Adresse email pour le suivi de la demande *</label>
-  <input type="email" id="email-contact" name="email_contact" placeholder="Ex : nom@email.com" required>
+    <label for="iban">Coordonnées bancaires (IBAN)</label>
+    <input type="text" id="iban" name="iban" class="form-control">
 
-  <!-- Envoi -->
-  <div class="mt-4 d-flex flex-column flex-md-row gap-3">
-    <button type="submit" class="btn-custom custom-primary">
-      📩 Soumettre la demande
-    </button>
-    <button type="button" class="btn-custom custom-primary" onclick="telechargerResume()">
-      💾 Télécharger le résumé PDF
-    </button>
-  </div>
-
-  <!-- Message de validation -->
-  <div id="message-soumission" class="mt-4 fw-bold text-success"></div>
+    <label>
+      <input type="checkbox" name="rgpd">
+      J'accepte le traitement de mes données dans le cadre de cette demande.
+    </label>
   </section>
+</div>
 
   <a href="suivi.html" class="btn btn-primary text-center mt-3 ms-3" id="btn-next-admin">
     Suivez l'avancement de vos primes >>
