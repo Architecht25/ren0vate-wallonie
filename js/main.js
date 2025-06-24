@@ -7,7 +7,7 @@ import { initialiserCalculCategorie } from './logic/calcul-categories.js';
 import { calculerTotalToutesCartes } from './logic/total-primes.js';
 
 // 🧱 Charge toutes les cartes de primes (standards + cas spéciaux)
-import { initialiserCartes } from './ui/cartes.js';
+import { initialiserCartes } from './ui/cartes-primes.js';
 
 // 👷‍♂️ Initialise l'ajout d'entrepreneurs (formulaire + stockage)
 import { initialiserAjoutEntrepreneurs } from './ui/entrepreneurs.js';

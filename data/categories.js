@@ -1,50 +1,42 @@
 export const categories = [
   {
-    "id": "categorie_4",
-    "description": "Revenus très faibles",
-    "conditions": {
-      "seul": "≤ 24230",
-      "seul_avec_charge_ou_couple_sans_charge": "≤ 36340",
-      "par_personne_en_plus": "+ 4320",
-      "autre_bien_interdit": true
-    },
-    "location_sociale_autorisee": true,
-    "eligible_pour_verbouwlening": true
+    id: "R1",
+    description: "Revenus très faibles",
+    min: 0,
+    max: 26900,
+    par_personne_en_plus: 5000,
+    majoration: 6
   },
   {
-    "id": "categorie_3",
-    "description": "Revenus faibles",
-    "conditions": {
-      "seul": "> 24230 et ≤ 42340",
-      "seul_avec_charge_ou_couple_sans_charge": "> 36340 et ≤ 59270",
-      "par_personne_en_plus": "+ 4320",
-      "autre_bien_interdit": true
-    },
-    "location_sociale_autorisee": false,
-    "eligible_pour_verbouwlening": true
+    id: "R2",
+    description: "Revenus faibles",
+    min: 26900.01,
+    max: 38300,
+    par_personne_en_plus: 5000,
+    majoration: 4
   },
   {
-    "id": "categorie_2",
-    "description": "Revenus moyens",
-    "conditions": {
-      "seul": "> 42340 et ≤ 53880",
-      "seul_avec_charge_ou_couple_sans_charge": "> 59270 et ≤ 76980",
-      "par_personne_en_plus": "+ 4320",
-      "autre_bien_interdit": true
-    },
-    "location_sociale_autorisee": false,
-    "eligible_pour_verbouwlening": true
+    id: "R3",
+    description: "Revenus moyens",
+    min: 38300.01,
+    max: 50600,
+    par_personne_en_plus: 5000,
+    majoration: 3
   },
   {
-    "id": "categorie_1",
-    "description": "Revenus élevés",
-    "conditions": {
-      "seul": "> 53880",
-      "seul_avec_charge_ou_couple_sans_charge": "> 76980",
-      "par_personne_en_plus": "+ 4320",
-      "autre_bien_interdit": false
-    },
-    "location_sociale_autorisee": false,
-    "eligible_pour_verbouwlening": false
+    id: "R4",
+    description: "Revenus élevés",
+    min: 50600.01,
+    max: 114400,
+    par_personne_en_plus: 5000,
+    majoration: 2
+  },
+  {
+    id: "R5",
+    description: "Revenus très élevés",
+    min: 114400.01,
+    max: Infinity,
+    par_personne_en_plus: 5000,
+    majoration: 1
   }
 ];

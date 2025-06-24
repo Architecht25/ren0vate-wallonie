@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Feuille de style CSS -->
   <link rel="stylesheet" href="CSS/style.css">
-  <link rel="stylesheet" href="CSS/components/card.css">
+  <!-- <link rel="stylesheet" href="CSS/components/card.css"> -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -37,16 +37,23 @@
           <option selected disabled>-- Sélectionnez votre situation --</option>
           <option value="couple">Couple</option>
           <option value="isole">Isolé</option>
-          <option value="isole_avec_enfant">Isolé avec enfant à charge</option>
         </select>
 
       <h5>Vos "Revenus Imposables Globalement" personnels</h5>
       <a href="https://www.minfin.fgov.be/myminfin-web/pages/public" target="_blank">Rechercher ici votre AER</a>
         <input  type="number" class="form-control"
-                id="revenu-demandeur" name="revenu-demandeur"
+                id="revenu-global-demandeur" name="revenu-global-demandeur"
                 placeholder="ex. 21374"
                 min="0" step="100"
                 required>
+
+      <h5>Vos "Revenus Imposables distinctements" personnels</h5>
+        <input  type="number" class="form-control"
+                id="revenu-distinct-demandeur" name="revenu-distinct-demandeur"
+                placeholder="ex. 1467"
+                min="0" step="100"
+                required>
+
       <h5>Année de l’avertissement extrait de rôle utilisé *</h5>
         <select id="années_de_revenus" name="année_revenus" class="form-select">
           <option selected disabled>-- Sélectionnez une année --</option>
@@ -57,9 +64,16 @@
 
       <h5>Les "Revenus Imposables Globalement" de votre conjoint</h5>
         <input  type="number" class="form-control"
-                  id="revenu-conjoint" name="revenu-conjoint"
+                  id="revenu-global-conjoint" name="revenu-global-conjoint"
                   placeholder="ex. 19671"
                   required>
+
+      <h5>Vos "Revenus Imposables distinctements" de votre conjoint</h5>
+        <input  type="number" class="form-control"
+                id="revenu-distinct-conjoint" name="revenu-distinct-conjoint"
+                placeholder="ex. 1467"
+                min="0" step="100"
+                required>
 
       <h5>Année de l’avertissement extrait de rôle utilisé *</h5>
         <select id="années_de_revenus" name="année_revenus" class="form-select">
@@ -75,29 +89,23 @@
                   placeholder="3"
                   required>
 
-      <!-- <h5>Présence dans le ménage d'une personne "client protégé"</h5>
-        <input  type="number" class="form-control"
-                  id="handicap" name="handicap"
-                  placeholder="1"
-                  required> -->
-
-      <div class="d-flex justify-content-center">
-        <button id="btn-calcul-prime" class="btn btn-success">Calculer votre catégorie de prime</button>
+      <div class="d-flex justify-content-center mt-4">
+        <button class="btn btn-primary" onclick="traiterCategorie()">Calculer ma catégorie</button>
       </div>
-      </div>
+    </div>
 
     <!-- 1.1 RESULTATS - catégorie de prime -->
     <div id="section-resultats-primes" class="mb-4">
-      <div id="categorie-resultat" class="alert alert-primary mt-4">
+      <div id="categorie-resultat" class="alert alert-primary mt-4 d-none">
         <strong>Catégorie de prime :</strong> <span id="categorie-prime">Veuillez encoder vos données personnelles.</span>
       </div>
     </div>
 
 
-    <h2 class="mb-4 text-center w-100">Calculez la valeur de vos primes régionales et PEB!</h2>
+    <h2 class="mb-4 text-center w-100">Calculez la valeur de vos primes régionales</h2>
 
     <!-- 2.2 RESULTATS - calcul des primes -->
-    <div id="section-resultats-primes" class="mb-4">
+    <div id="section-resultats-primes-totaux" class="mb-4">
       <div id="prime-total-result" class="alert alert-primary mt-4">
         <strong>Total estimé des primes :</strong> <span id="total-primes-affiche">0 €</span>
       </div>
@@ -154,6 +162,6 @@
     <div id="prime-cards-container" class="row gx-3 gy-4 mt-4">
     </div>
 
-    <script type="module" src="js/main.js" defer></script>
+    <script type="module" src="js/calcul-categorie-menage.js"></script>
 </body>
 </html>
