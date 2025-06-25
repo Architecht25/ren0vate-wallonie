@@ -761,9 +761,9 @@
     "typeDeValeur": "dynamique",
     "valeursParCategorie": {
       "R1": 204,
-      "R2": 184,
-      "R3": 143,
-      "R4": 82,
+      "R2": 136,
+      "R3": 102,
+      "R4": 68,
       "R5": 34
     },
     "condition": "Voir conditions techniques spécifiques sur le site officiel.",
@@ -787,9 +787,9 @@
     "typeDeValeur": "dynamique",
     "valeursParCategorie": {
       "R1": 120,
-      "R2": 108,
-      "R3": 84,
-      "R4": 48,
+      "R2": 80,
+      "R3": 60,
+      "R4": 40,
       "R5": 20
     },
     "condition": "Voir conditions techniques spécifiques sur le site officiel.",
@@ -813,9 +813,9 @@
     "typeDeValeur": "dynamique",
     "valeursParCategorie": {
       "R1": 204,
-      "R2": 184,
-      "R3": 143,
-      "R4": 82,
+      "R2": 136,
+      "R3": 102,
+      "R4": 68,
       "R5": 34
     },
     "condition": "Voir conditions techniques spécifiques sur le site officiel.",
@@ -839,9 +839,9 @@
     "typeDeValeur": "dynamique",
     "valeursParCategorie": {
       "R1": 84,
-      "R2": 76,
-      "R3": 59,
-      "R4": 34,
+      "R2": 56,
+      "R3": 42,
+      "R4": 28,
       "R5": 14
     },
     "condition": "Voir conditions techniques spécifiques sur le site officiel.",
@@ -865,9 +865,9 @@
     "typeDeValeur": "dynamique",
     "valeursParCategorie": {
       "R1": 456,
-      "R2": 410,
-      "R3": 319,
-      "R4": 182,
+      "R2": 304,
+      "R3": 228,
+      "R4": 152,
       "R5": 76
     },
     "condition": "Voir conditions techniques spécifiques sur le site officiel.",
@@ -890,10 +890,10 @@
     "unite": "€/ballon",
     "typeDeValeur": "dynamique",
     "valeursParCategorie": {
-      "R1": 600,
-      "R2": 540,
-      "R3": 420,
-      "R4": 240,
+      "R1": 240,
+      "R2": 160,
+      "R3": 120,
+      "R4": 80,
       "R5": 40
     },
     "condition": "Voir conditions techniques spécifiques sur le site officiel.",
@@ -917,9 +917,9 @@
     "typeDeValeur": "dynamique",
     "valeursParCategorie": {
       "R1": 408,
-      "R2": 367,
-      "R3": 286,
-      "R4": 163,
+      "R2": 272,
+      "R3": 204,
+      "R4": 136,
       "R5": 68
     },
     "condition": "Voir conditions techniques spécifiques sur le site officiel.",
@@ -938,14 +938,14 @@
   {
     "id": "chauffage_vannes",
     "slug": "chauffage_vannes",
-    "titre": "Amélioration chauffage – 5 vannes thermostatiques",
+    "titre": "Amélioration chauffage – minimum 5 vannes thermostatiques",
     "unite": "€/5 vannes",
     "typeDeValeur": "dynamique",
     "valeursParCategorie": {
       "R1": 120,
-      "R2": 108,
-      "R3": 84,
-      "R4": 48,
+      "R2": 80,
+      "R3": 60,
+      "R4": 40,
       "R5": 20
     },
     "condition": "Voir conditions techniques spécifiques sur le site officiel.",
@@ -962,6 +962,32 @@
     "image": "images/chauffage.jpg"
   },
   {
+    "id": "chauffage_vannes",
+    "slug": "chauffage_vannes",
+    "titre": "Amélioration chauffage – supplémentaire aux 5 vannes thermostatiques de base",
+    "unite": "€/5 vannes",
+    "typeDeValeur": "dynamique",
+    "valeursParCategorie": {
+      "R1": 24,
+      "R2": 16,
+      "R3": 12,
+      "R4": 8,
+      "R5": 4
+    },
+    "condition": "Voir conditions techniques spécifiques sur le site officiel.",
+    "conseil": "Faites appel à un professionnel certifié pour la pose et la conformité.",
+    "document": "Facture détaillée + certificat de conformité ou attestation de performance",
+    "specifique": "standard",
+    "placeholder": {
+      "R1": "Nombre de vannes",
+      "R2": "Nombre de vannes",
+      "R3": "Nombre de vannes",
+      "R4": "Nombre de vannes",
+      "R5": "Nombre de vannes"
+    },
+    "image": "images/chauffage.jpg"
+  },
+  {
     "id": "chauffage_thermostat",
     "slug": "chauffage_thermostat",
     "titre": "Amélioration chauffage – Thermostat d’ambiance",
@@ -969,9 +995,9 @@
     "typeDeValeur": "dynamique",
     "valeursParCategorie": {
       "R1": 96,
-      "R2": 86,
-      "R3": 67,
-      "R4": 38,
+      "R2": 64,
+      "R3": 48,
+      "R4": 32,
       "R5": 16
     },
     "condition": "Voir conditions techniques spécifiques sur le site officiel.",
@@ -995,9 +1021,9 @@
     "typeDeValeur": "dynamique",
     "valeursParCategorie": {
       "R1": 288,
-      "R2": 259,
-      "R3": 202,
-      "R4": 115,
+      "R2": 192,
+      "R3": 144,
+      "R4": 96,
       "R5": 48
     },
     "condition": "Voir conditions techniques spécifiques sur le site officiel.",
@@ -1021,9 +1047,9 @@
     "typeDeValeur": "dynamique",
     "valeursParCategorie": {
       "R1": 432,
-      "R2": 389,
-      "R3": 302,
-      "R4": 173,
+      "R2": 288,
+      "R3": 216,
+      "R4": 144,
       "R5": 72
     },
     "condition": "Voir conditions techniques spécifiques sur le site officiel.",
@@ -1047,9 +1073,9 @@
     "typeDeValeur": "dynamique",
     "valeursParCategorie": {
       "R1": 120,
-      "R2": 108,
-      "R3": 84,
-      "R4": 48,
+      "R2": 80,
+      "R3": 60,
+      "R4": 40,
       "R5": 20
     },
     "condition": "Voir conditions techniques spécifiques sur le site officiel.",
@@ -1073,9 +1099,9 @@
     "typeDeValeur": "dynamique",
     "valeursParCategorie": {
       "R1": 204,
-      "R2": 184,
-      "R3": 143,
-      "R4": 82,
+      "R2": 136,
+      "R3": 102,
+      "R4": 68,
       "R5": 34
     },
     "condition": "Voir conditions techniques spécifiques sur le site officiel.",
@@ -1099,9 +1125,9 @@
     "typeDeValeur": "dynamique",
     "valeursParCategorie": {
       "R1": 120,
-      "R2": 108,
-      "R3": 84,
-      "R4": 48,
+      "R2": 80,
+      "R3": 60,
+      "R4": 40,
       "R5": 20
     },
     "condition": "Voir conditions techniques spécifiques sur le site officiel.",
@@ -1124,10 +1150,10 @@
     "unite": "€/ballon",
     "typeDeValeur": "dynamique",
     "valeursParCategorie": {
-      "R1": 120,
-      "R2": 108,
-      "R3": 84,
-      "R4": 48,
+      "R1": 204,
+      "R2": 136,
+      "R3": 102,
+      "R4": 68,
       "R5": 34
     },
     "condition": "Voir conditions techniques spécifiques sur le site officiel.",
