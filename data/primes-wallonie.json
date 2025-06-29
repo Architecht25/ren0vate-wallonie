@@ -23,7 +23,8 @@
       "R4": "Forfaitaire - 1 ou 0",
       "R5": "Forfaitaire - 1 ou 0"
     },
-    "image": "images/audit.webp"
+    "image": "images/audit.webp",
+     "region": "wallonie"
   },
   {
     "id": "toiture_-_remplacement_de_la_couverture__m²",
@@ -49,7 +50,8 @@
       "R4": "surface en m²",
       "R5": "surface en m²"
     },
-    "image": "images/renovation_toiture.webp"
+    "image": "images/renovation_toiture.webp",
+     "region": "wallonie"
   },
   {
     "id": "toiture_-_appropriation_de_la_charpente",
@@ -75,7 +77,8 @@
       "R4": "Forfaitaire - 1 ou 0",
       "R5": "Forfaitaire - 1 ou 0"
     },
-    "image": "images/renovation_toiture.webp"
+    "image": "images/renovation_toiture.webp",
+    "region": "wallonie"
   },
   {
     "id": "toiture_-_remplacement_du_dispositif_de_collecte_et_d'évacuation_des_eaux_pluviales",
@@ -101,7 +104,8 @@
       "R4": "Forfaitaire - 1 ou 0",
       "R5": "Forfaitaire - 1 ou 0"
     },
-    "image": "images/renovation_toiture.webp"
+    "image": "images/renovation_toiture.webp",
+    "region": "wallonie"
   },
   {
     "id": "toiture_-_isolation_thermique_du_toit_ou_des_combles__m²",
@@ -127,7 +131,8 @@
       "R4": "surface en m²",
       "R5": "surface en m²"
     },
-    "image": "images/renovation_toiture.webp"
+    "image": "images/renovation_toiture.webp",
+    "region": "wallonie"
   },
   {
     "id": "toiture_-_isolation_thermique_du_toit_ou_des_combles__m²_-_biosource",
@@ -153,7 +158,8 @@
       "R4": "surface en m²",
       "R5": "surface en m²"
     },
-    "image": "images/renovation_toiture.webp"
+    "image": "images/renovation_toiture.webp",
+    "region": "wallonie"
   },
   {
     "id": "assèchement_des_murs_-_infiltration___m²",
@@ -179,7 +185,8 @@
       "R4": "Surface en m²",
       "R5": "Surface en m²"
     },
-    "image": "images/renovation_murs.webp"
+    "image": "images/renovation_murs.webp",
+    "region": "wallonie"
   },
   {
     "id": "assèchement_des_murs_-_humidité_ascensionnelle___m²",
@@ -205,7 +212,8 @@
       "R4": "Surface en m²",
       "R5": "Surface en m²"
     },
-    "image": "images/renovation_murs.webp"
+    "image": "images/renovation_murs.webp",
+    "region": "wallonie"
   },
   {
     "id": "renforcement_des_murs_instables_ou_démolition_reconstruction__m²",
@@ -231,7 +239,8 @@
       "R4": "Surface en m²",
       "R5": "Surface en m²"
     },
-    "image": "images/renovation_murs.webp"
+    "image": "images/renovation_murs.webp",
+    "region": "wallonie"
   },
   {
     "id": "remplacement_des_supports_des_aires_de_circulation___m²",
@@ -257,7 +266,8 @@
       "R4": "Surface en m²",
       "R5": "Surface en m²"
     },
-    "image": "images/renovation_murs.webp"
+    "image": "images/renovation_murs.webp",
+    "region": "wallonie"
   },
   {
     "id": "élimination_de_la_mérule",
@@ -283,7 +293,8 @@
       "R4": "Forfaitaire - 1 ou 0",
       "R5": "Forfaitaire - 1 ou 0"
     },
-    "image": "images/renovation_murs.webp"
+    "image": "images/renovation_murs.webp",
+    "region": "wallonie"
   },
   {
     "id": "élimination_du_radon",
@@ -309,7 +320,8 @@
       "R4": "Forfaitaire - 1 ou 0",
       "R5": "Forfaitaire - 1 ou 0"
     },
-    "image": "images/renovation_murs.webp"
+    "image": "images/renovation_murs.webp",
+    "region": "wallonie"
   },
   {
     "id": "isolation_thermique_des_murs__m²",
@@ -335,7 +347,8 @@
       "R4": "Surface en m²",
       "R5": "Surface en m²"
     },
-    "image": "images/renovation_murs.webp"
+    "image": "images/renovation_murs.webp",
+    "region": "wallonie"
   },
   {
     "id": "isolation_thermique_des_murs__m²_-_biosource",
@@ -361,7 +374,8 @@
       "R4": "Surface en m²",
       "R5": "Surface en m²"
     },
-    "image": "images/renovation_murs.webp"
+    "image": "images/renovation_murs.webp",
+    "region": "wallonie"
   },
   {
     "id": "isolation_thermique_des_sols__m²",
@@ -387,7 +401,8 @@
       "R4": "surface en m²",
       "R5": "surface en m²"
     },
-    "image": "images/renovation_sol.webp"
+    "image": "images/renovation_sol.webp",
+    "region": "wallonie"
   },
   {
     "id": "isolation_thermique_des_sols__m²_-_biosource",
@@ -413,7 +428,8 @@
       "R4": "surface en m²",
       "R5": "surface en m²"
     },
-    "image": "images/renovation_sol.webp"
+    "image": "images/renovation_sol.webp",
+    "region": "wallonie"
   },
   {
     "id": "isolation_finition_planchers__m²",
@@ -439,7 +455,8 @@
       "R4": "surface en m²",
       "R5": "surface en m²"
     },
-    "image": "images/renovation_sol.webp"
+    "image": "images/renovation_sol.webp",
+    "region": "wallonie"
   },
   {
     "id": "remplacement_des_menuiseries_vitrages_extérieurs__m²",
@@ -465,7 +482,8 @@
       "R4": "surface en m²",
       "R5": "surface en m²"
     },
-    "image": "images/remplacement_chassis.webp"
+    "image": "images/remplacement_chassis.webp",
+    "region": "wallonie"
   },
   {
     "id": "appropriation_de_l'installation_électrique",
@@ -491,7 +509,8 @@
       "R4": "Forfaitaire - 1 ou 0",
       "R5": "Forfaitaire - 1 ou 0"
     },
-    "image": "images/electricité.webp"
+    "image": "images/electricité.webp",
+    "region": "wallonie"
   },
   {
     "id": "appropriation_de_l'installation_de_gaz",
@@ -517,7 +536,8 @@
       "R4": "Forfaitaire - 1 ou 0",
       "R5": "Forfaitaire - 1 ou 0"
     },
-    "image": "images/pac_géothermique.webp"
+    "image": "images/pac_géothermique.webp",
+    "region": "wallonie"
   },
   {
     "id": "pac_eau_chaude",
@@ -543,7 +563,8 @@
       "R4": "Forfaitaire - 1 ou 0",
       "R5": "f"
     },
-    "image": "images/pac_géothermique.webp"
+    "image": "images/pac_géothermique.webp",
+    "region": "wallonie"
   },
   {
     "id": "pac_chauffage",
@@ -569,7 +590,8 @@
       "R4": "Forfaitaire - 1 ou 0",
       "R5": "Forfaitaire - 1 ou 0"
     },
-    "image": "images/pac_géothermique.webp"
+    "image": "images/pac_géothermique.webp",
+    "region": "wallonie"
   },
   {
     "id": "chaudiere_biomasse",
@@ -595,7 +617,8 @@
       "R4": "Forfaitaire - 1 ou 0",
       "R5": "Forfaitaire - 1 ou 0"
     },
-    "image": "images/pac_géothermique.webp"
+    "image": "images/pac_géothermique.webp",
+    "region": "wallonie"
   },
   {
     "id": "chauffe_eau_solaire",
@@ -621,7 +644,8 @@
       "R4": "Forfaitaire - 1 ou 0",
       "R5": "Forfaitaire - 1 ou 0"
     },
-    "image": "images/pac_géothermique.webp"
+    "image": "images/pac_géothermique.webp",
+    "region": "wallonie"
   },
   {
     "id": "poele_biomasse",
@@ -647,7 +671,8 @@
       "R4": "Forfaitaire - 1 ou 0",
       "R5": "Forfaitaire - 1 ou 0"
     },
-    "image": "images/pac_géothermique.webp"
+    "image": "images/pac_géothermique.webp",
+    "region": "wallonie"
   },
   {
     "id": "vmc_simple",
@@ -673,7 +698,8 @@
       "R4": "Forfaitaire - 1 ou 0",
       "R5": "Forfaitaire - 1 ou 0"
     },
-    "image": "images/ventilation.png"
+    "image": "images/ventilation.png",
+    "region": "wallonie"
   },
   {
     "id": "vmc_double",
@@ -699,7 +725,8 @@
       "R4": "Forfaitaire - 1 ou 0",
       "R5": "Forfaitaire - 1 ou 0"
     },
-    "image": "images/ventilation.png"
+    "image": "images/ventilation.png",
+    "region": "wallonie"
   },
   {
     "id": "vmc_simple_partielle",
@@ -725,7 +752,8 @@
       "R4": "Forfaitaire - 1 ou 0",
       "R5": "Forfaitaire - 1 ou 0"
     },
-    "image": "images/ventilation.png"
+    "image": "images/ventilation.png",
+    "region": "wallonie"
   },
   {
     "id": "vmc_double_partielle",
@@ -751,7 +779,8 @@
       "R4": "Forfaitaire - 1 ou 0",
       "R5": "Forfaitaire - 1 ou 0"
     },
-    "image": "images/ventilation.png"
+    "image": "images/ventilation.png",
+    "region": "wallonie"
   },
   {
     "id": "chauffage_isol_conduites",
@@ -777,7 +806,8 @@
       "R4": "Forfaitaire - 1 ou 0",
       "R5": "Forfaitaire - 1 ou 0"
     },
-    "image": "images/chauffage.jpg"
+    "image": "images/chauffage.jpg",
+    "region": "wallonie"
   },
   {
     "id": "chauffage_isol_ballon_500",
@@ -803,7 +833,8 @@
       "R4": "Forfaitaire - 1 ou 0",
       "R5": "Forfaitaire - 1 ou 0"
     },
-    "image": "images/chauffage.jpg"
+    "image": "images/chauffage.jpg",
+    "region": "wallonie"
   },
   {
     "id": "chauffage_isol_ballon_sup",
@@ -829,7 +860,8 @@
       "R4": "Forfaitaire - 1 ou 0",
       "R5": "Forfaitaire - 1 ou 0"
     },
-    "image": "images/chauffage.jpg"
+    "image": "images/chauffage.jpg",
+    "region": "wallonie"
   },
   {
     "id": "chauffage_circ_3logt",
@@ -855,7 +887,8 @@
       "R4": "Forfaitaire - 1 ou 0",
       "R5": "Forfaitaire - 1 ou 0"
     },
-    "image": "images/chauffage.jpg"
+    "image": "images/chauffage.jpg",
+    "region": "wallonie"
   },
   {
     "id": "chauffage_circ_4logt",
@@ -881,7 +914,8 @@
       "R4": "Forfaitaire - 1 ou 0",
       "R5": "Forfaitaire - 1 ou 0"
     },
-    "image": "images/chauffage.jpg"
+    "image": "images/chauffage.jpg",
+    "region": "wallonie"
   },
   {
     "id": "chauffage_ballon_500",
@@ -907,7 +941,8 @@
       "R4": "Forfaitaire - 1 ou 0",
       "R5": "Forfaitaire - 1 ou 0"
     },
-    "image": "images/chauffage.jpg"
+    "image": "images/chauffage.jpg",
+    "region": "wallonie"
   },
   {
     "id": "chauffage_ballon_sup",
@@ -933,7 +968,8 @@
       "R4": "Forfaitaire - 1 ou 0",
       "R5": "Forfaitaire - 1 ou 0"
     },
-    "image": "images/chauffage.jpg"
+    "image": "images/chauffage.jpg",
+    "region": "wallonie"
   },
   {
     "id": "chauffage_vannes",
@@ -959,7 +995,8 @@
       "R4": "Forfaitaire - 1 ou 0",
       "R5": "Forfaitaire - 1 ou 0"
     },
-    "image": "images/chauffage.jpg"
+    "image": "images/chauffage.jpg",
+    "region": "wallonie"
   },
   {
     "id": "chauffage_vannes",
@@ -985,7 +1022,8 @@
       "R4": "Nombre de vannes",
       "R5": "Nombre de vannes"
     },
-    "image": "images/chauffage.jpg"
+    "image": "images/chauffage.jpg",
+    "region": "wallonie"
   },
   {
     "id": "chauffage_thermostat",
@@ -1011,7 +1049,8 @@
       "R4": "Forfaitaire - 1 ou 0",
       "R5": "Forfaitaire - 1 ou 0"
     },
-    "image": "images/chauffage.jpg"
+    "image": "images/chauffage.jpg",
+    "region": "wallonie"
   },
   {
     "id": "ecs_ballon_500",
@@ -1037,7 +1076,8 @@
       "R4": "Forfaitaire - 1 ou 0",
       "R5": "Forfaitaire - 1 ou 0"
     },
-    "image": "images/chauffage.jpg"
+    "image": "images/chauffage.jpg",
+    "region": "wallonie"
   },
   {
     "id": "ecs_ballon_sup",
@@ -1063,7 +1103,8 @@
       "R4": "Forfaitaire - 1 ou 0",
       "R5": "Forfaitaire - 1 ou 0"
     },
-    "image": "images/chauffage.jpg"
+    "image": "images/chauffage.jpg",
+    "region": "wallonie"
   },
   {
     "id": "ecs_conduites_coll",
@@ -1089,7 +1130,8 @@
       "R4": "Forfaitaire - 1 ou 0",
       "R5": "Forfaitaire - 1 ou 0"
     },
-    "image": "images/chauffage.jpg"
+    "image": "images/chauffage.jpg",
+    "region": "wallonie"
   },
   {
     "id": "ecs_echangeur",
@@ -1115,7 +1157,8 @@
       "R4": "Forfaitaire - 1 ou 0",
       "R5": "Forfaitaire - 1 ou 0"
     },
-    "image": "images/chauffage.jpg"
+    "image": "images/chauffage.jpg",
+    "region": "wallonie"
   },
   {
     "id": "ecs_isol_ballon_500",
@@ -1141,7 +1184,8 @@
       "R4": "Forfaitaire - 1 ou 0",
       "R5": "Forfaitaire - 1 ou 0"
     },
-    "image": "images/chauffage.jpg"
+    "image": "images/chauffage.jpg",
+    "region": "wallonie"
   },
   {
     "id": "ecs_isol_ballon_sup",
@@ -1167,6 +1211,7 @@
       "R4": "Forfaitaire - 1 ou 0",
       "R5": "Forfaitaire - 1 ou 0"
     },
-    "image": "images/chauffage.jpg"
+    "image": "images/chauffage.jpg",
+    "region": "wallonie"
   }
 ]
